@@ -1,0 +1,49 @@
+/*
+Theme Name:   Wisdom Journal
+Theme URI:    https://codevibrant.com/wpthemes/wisdom-journal/
+Author:       CodeVibrant
+Author URI:   https://codevibrant.com/
+Description:  Wisdom Journal is the child theme of Wisdom Blog which is Clean & Personal Blog Theme from CodeVibrant! Fully responsive design displays beautifully across desktop, mobile and all devices. Easy installation allows you to start post blogs immediately after the activation. Theme supported Customizer which allows you to customize and change design of your blog. Perfect choice for your personal blog, corporate blog, marketing blog, authority blog or any type of creative blog.
+Version:      1.0.1
+License:      GNU General Public License v3 or later
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+Template:     wisdom-blog
+Text Domain:  wisdom-journal
+Tags:         blog, portfolio, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-image-header, threaded-comments, sticky-post, theme-options, translation-ready
+
+*/
+
+#cv-masonry {
+	margin-left: -3%;
+}
+
+#cv-masonry article {
+	width: 30.33%;
+	display: inline-block;
+	margin-right: -4px;
+	vertical-align: top;
+	margin-left: 3%;
+}
+
+.right-sidebar #cv-masonry article,
+.left-sidebar #cv-masonry article,
+.no-sidebar-center #cv-masonry article{
+    width: 47%;
+}
+
+#site-footer-navigation .sub-menu {
+	display: none;
+}
+
+@media (max-width: 979px) {
+    #cv-masonry article{
+        width: 47%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #cv-masonry article{
+        width: 97%;
+    } 
+}

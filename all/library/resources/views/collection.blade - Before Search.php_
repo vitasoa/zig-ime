@@ -1,0 +1,218 @@
+@extends('layouts.app') 
+
+@section('pageTitle', 'Collections')
+
+@section('content')
+<section class="py-6" style="margin-top: 7rem;">
+	
+	<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+		<div class="row-fluid ">
+			<div class="span12 widget-span widget-type-widget_container " data-w="12" data-widget-type="widget_container" data-x="0" style="">
+				<div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" data-hs-cos-general-type="widget" data-hs-cos-type="module" id="hs_cos_wrapper_widget_1616529550031" style="">
+					<section class="hsg-page-header" data-background="light" data-image-frame="background">
+						<div class="hsg-page-header__bg-image hsg-page-header__bg--desktop" style="background-image: url('/assets/img/contact/contact.jpg');">
+							&nbsp;
+						</div>
+						<div class="hsg-page-header__bg-wrapper">
+							<div class="hsg-page-header__bg-blob">
+								<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container" id="hs_cos_wrapper_module_153737270786195" style="">
+									<svg class="hsg-page-header__bg--desktop" viewBox="0 0 984 686" xmlns="http://www.w3.org/2000/svg">
+										<path class="hsg-page-header__bg-blob--background" d="M829.645582,-3.55271368e-14 C818.959194,11.9356039 808.954818,24.8206121 799.721248,38.7211139 C723.226254,157.53566 739.861725,301.270975 797.809751,426.687474 C804.958442,442.184984 814.61534,462.120894 818.944183,473.423703 C844.673456,540.503061 856.345675,600.855141 881.916718,667.40505 C761.006678,679.138421 646.665221,685.004119 538.890625,685.004119 L0,685.004119 L0,685.004119 L0,0.00411925189 Z">
+										</path>
+										<path class="hsg-page-header__bg-blob--small" d="M995.765853,690.670383 C1004.18224,698.198908 1010.89512,706.716917 1015.98268,715.998337 L579.456263,715.992134 C583.995701,573.812815 592.889746,520.954152 721.334176,485.511351 C860.208297,447.190586 918.80802,621.831016 995.765853,690.670383 Z">
+										</path>
+									</svg>
+									<svg class="hsg-page-header__bg--mobile" height="370px" viewBox="0 0 399 370" width="399px" xmlns="http://www.w3.org/2000/svg">
+										<path class="hsg-page-header__bg-blob--small" d="M357.380517,258.129067 C289.700199,321.205562 123.068973,365.865461 71.2230933,342.491713 C19.3772199,319.117964 -82.3833684,172.316247 62.1998722,119.163231 C206.783094,66.0102193 151.987177,-56.4020257 290.115441,34.2750973 C428.243705,124.952215 425.060835,195.052572 357.380517,258.129067 Z" transform="translate(195.334713, 175.293083) rotate(-15.000000) translate(-195.334713, -175.293083) ">
+										</path>
+									</svg>
+								</span>
+							</div>
+						</div>
+						<div class="hsg-page-header__container">
+							<div class="hsg-page-header__content">
+								<div class="hsg-page-header__text">
+									<h1 class="hsg-page-header__heading">
+										<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container" id="hs_cos_wrapper_module_153737270786195" style="">
+											Nos Collections - I.M.E
+										</span>
+									</h1>
+									<p>
+										<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container" id="hs_cos_wrapper_module_153737270786195" style="">
+											Si vous possédez une bibliothèque et un jardin, vous avez tout ce qu'il vous faut ...
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!--end widget-span -->
+		</div>
+		<!--end row-->
+	</div>
+	
+	<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+
+			
+			<div class="col-lg-12 search-form-ime">
+				<h1 class="hsg-page-header__heading">Chercher à partir des critères ci-dessous</h1>
+				<div class="card1 pb-1" id="page">
+					<form action="{{ route('collection.search') }}" method="POST">
+						@csrf
+						<fieldset>
+							<input autofocus="autofocus" name="req" id="s" size="30" maxlength="200" class="form-control">
+							<input type="submit" value="Submit" id="submitButton" />
+							
+							<strong class="search-title">Thèmes</strong>
+							<div class="search-line"></div>
+							<div id="searchInContainer">
+								@foreach($themes as $theme)
+									<span class="wrapper">
+										<input type="radio" name="theme" value="{{ $theme->name }}" id="{{ $theme->name }}" />
+										<label for="{{ $theme->name }}" id="site{{ $theme->name }}">{{ $theme->name }}</label>
+									</span> 
+								@endforeach
+							</div>
+							
+							<strong class="search-title">Quelques options de recherche</strong>
+							<div class="search-line"></div>
+							<div id="searchInContainer">
+								<span class="wrapper">
+									<input type="radio" name="option" value="default">
+									<label for="default" class="text-md-left">Par défaut (Titre, Auteurs)</label>
+								</span> 
+								<span class="wrapper">
+									<input type="radio" name="option" value="title">
+									<label for="title" class="text-md-left">Titre</label>
+								</span>
+								<span class="wrapper">
+									<input type="radio" name="option" value="author">
+									<label for="author" class="text-md-left">Auteur(s)</label>
+								</span>
+								
+								<span class="wrapper">
+									<input type="radio" name="option" value="year">
+									<label for="year" class="text-md-left">Année</label>
+								</span> 
+								<span class="wrapper">
+									<input type="radio" name="option" value="isbn">
+									<label for="isbn" class="text-md-left">isbn</label>
+								</span>
+								<span class="wrapper">
+									<input type="radio" name="option" value="tag">
+									<label for="tag" class="text-md-left">Mot(s) clé(s)</label>
+								</span>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="container mt-5 mb-5">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="d-flex flex-row justify-content-between align-items-center filters">
+								<h6>{{ $nbr_collections }} Ebook(s)</h6>
+								<div class="right-sort">
+									<div class="sort-by"><span class="mr-1">Critère : </span>
+									<select id="ime-filter">
+										<option value="rating">Most popular</option>
+										<option value="name_asc">Ascending</option>
+										<option value="name_desc">Descending</option>
+										<option value="date_asc">Date ASC</option>
+										<option value="date_desc">Date DESC</option>
+									</select>
+									<button class="btn btn-outline-dark btn-sm ml-3 filter" type="button">Filtrer</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-1">
+					{{-- @foreach($courses as $c)
+							@php dd($c->themes); @endphp
+					@endforeach --}}
+						@foreach($collections as $collection)
+						<div class="col-md-4">
+							<div style="height: 390px" class="p-card p-2 collection-rounded px-3">
+								<div class="d-flex align-items-center credits">
+									<!--img src="https://i.imgur.com/hlz6G90.png" width="16px"-->
+									<i class="fas fa-book"></i>
+									<span class="text-black-50 ml-2">1 download(s)</span>
+								</div>
+								<a href="{{route('collection.detail', ['id' => app('encrypter')->encrypt($collection->id)])}}">
+								@if ($collection->image)
+									<img class="collection-img" src="{{$collection->image}}"></img>
+								@else
+									<div class="collection-div">No Image</div>
+								@endif
+								</a>
+								<a href="{{route('collection.detail', ['id' => app('encrypter')->encrypt($collection->id)])}}">
+								<h5 class="mt-2">{{ $collection->name }}</h5>
+								</a>
+								
+								@php
+									$authors = App\Models\Book::getAuthors($collection->id);
+									$themes = App\Models\Book::getThemes($collection->id);
+									$countAuthors = count($authors);
+								@endphp
+								
+								<span class="badge badge-danger py-1 mb-2">
+								@php
+									$implodeThemes = array();
+									foreach($themes as $theme){
+										$collectionTheme = App\Models\Theme::getThemeById($theme->theme_id);
+										array_push($implodeThemes, $collectionTheme->name);
+									}
+									
+									$allowThemes = implode(' & ', $implodeThemes);
+									if (!$allowThemes) {
+										$allowThemes = 'Physiques';
+									}
+								@endphp
+								{{ $allowThemes }}
+								</span>
+								<span class="d-block mb-1 collection-theme">{{ Str::limit($collection->commentary, 40, ' ...') }}</span>
+								<div class="d-flex justify-content-between stats">
+									<div><i class="fas fa-calendar"></i><span class="ml-2">{{ Carbon\Carbon::parse($collection->created_at)->diffForHumans()}}</span></div>
+									<div class="d-flex flex-row align-items-center">
+										<div class="profiles">
+											@php
+												foreach($authors as $author){
+													$collectionAuthor = App\Models\Author::getAuthorsById($author->author_id);
+											@endphp
+													<img class="rounded-circle" style="cursor: pointer;" src="{{ $collectionAuthor->profile_photo }}" width="30" title="{{ $collectionAuthor->lastname }}">
+											@php
+												}
+											@endphp
+											<!--img class="rounded-circle" src=" https://i.imgur.com/GHCtqgp.jpg" width="30">
+											<img class="rounded-circle" src="https://i.imgur.com/UL0GS75.jpg" width="30"-->
+										</div>
+										<!--span class="ml-3">{{ $countAuthors }} Auteurs</span-->
+									</div>
+								</div>
+							</div>
+						</div>
+						@endforeach
+					</div>
+					<!--div class="d-flex justify-content-end text-right mt-2">
+						<nav>
+							<ul class="pagination">
+								<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item"><a class="page-link" href="#">4</a></li>
+								<li class="page-item"><a class="page-link" href="#">5</a></li>
+								<li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+							</ul>
+						</nav>
+					</div-->
+				</div>
+			</div>
+		
+	</div>
+	
+</section>
+@endsection

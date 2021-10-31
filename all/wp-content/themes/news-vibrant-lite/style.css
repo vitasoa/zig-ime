@@ -1,0 +1,89 @@
+/*
+Theme Name:     News Vibrant Lite
+Theme URI:      https://codevibrant.com/wpthemes/news-vibrant-lite
+Author:         CodeVibrant
+Author URI:     https://codevibrant.com
+Description:    News Vibrant Lite is a child theme of News Vibrant modern magazine WordPress theme, with creative design and powerful features that lets you write articles and blog posts with ease. It uses the best clean SEO practices, responsive HTML5, and on top of that, it’s fast, simple, and easy to use.  Use the Customizer to add your own background, page layout, site width and more.
+Version:        1.0.1
+License:        GNU General Public License v3 or later
+License URI:    http://www.gnu.org/licenses/gpl-3.0.html
+Template:       news-vibrant
+Text Domain:    news-vibrant-lite
+Tags:           news, blog, grid-layout, custom-colors, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-logo, footer-widgets, full-width-template, translation-ready
+*/
+
+.nv-header-menu-wrapper {
+	box-shadow: none;
+	border-top: none;
+}
+
+#site-navigation ul li:hover > a, 
+#site-navigation ul li.current-menu-item > a, 
+#site-navigation ul li.current_page_item > a, 
+#site-navigation ul li.current-menu-ancestor > a{
+    color: #08408E;
+    background: none;
+}
+
+#site-navigation ul li a::before{
+    display: none;
+}
+
+#site-navigation ul li a {
+	padding: 0 15px;
+	margin-right: 0;
+}
+
+.nv-home-icon a{
+    color: #333 !important;
+}
+
+.home .nv-home-icon a, .nv-home-icon a:hover {
+	background: none !important;
+	color: #08408E !important;
+}
+
+.home .comments-link {
+	display: none;
+}
+
+.nv-block-title, .widget-title, .page-header .page-title, .nv-related-title {
+	border-left: none;
+	padding: 0;
+	padding: 0 0 8px;
+	color: #08408e;
+	border-bottom: 1px solid #e1e1e1;
+    position: relative;
+}
+
+.nv-block-title::after,
+.widget-title:after, 
+.page-header .page-title:after, 
+.nv-related-title:after{
+	content: "";
+	width: 60px;
+	height: 2px;
+	background: #08408e;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+
+#top-footer .nv-block-title::after,
+#top-footer .widget-title:after {
+    display: none;
+}
+
+#top-footer .widget-title {
+	border: none;
+	margin: 0 0 10px;
+    color: #fff !important;
+}
+
+.nv-block-title-nav-wrap .carousel-nav-action .carousel-controls {
+	padding: 0px 13px;
+}
+
+.nv-block-title-nav-wrap .carousel-nav-action {
+	top: -5px;
+}

@@ -1,0 +1,285 @@
+/**
+ * Raindrops Langueges Style Rules for Japanese (ja)
+ * 
+ * Filetype: CSS
+ * @package Raindrops
+ */
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Regular");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Regular");
+    font-weight: 200;
+}
+/*
+* Noto Sans JP (japanese) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+   font-family:'Noto Sans JP';
+   src:local("Noto Sans CJK JP"),
+       url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Light.otf) format('opentype');
+   font-weight: 300;
+   font-style:normal;
+   font-display: fallback;/* @1.503 */
+   unicode-range: U+300C,U+300D,U+300E,U+300F,U+3010,U+3011,U+3008,U+3009,U+300A,U+300B,U+3013,U+3014,U+3015,U+3016,U+3017, U+3000,U+3001,U+3002;
+   
+}
+
+.wp-block-verse,
+table,
+body {
+    font-family: "-apple-system", "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
+    font-feature-settings: "palt";
+}
+/* "Yu Gothic" chrome issue 
+ * 1.497 add Open Type font, Kerning with font-feature-settings
+ */
+body.opera:not(.rd-type-dark),
+body.chrome:not(.rd-type-dark){
+    font-family:   "-apple-system", "Helvetica Neue", 'Noto Sans JP', Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif;
+}
+/* IE10+ */ 
+@media all and (-ms-high-contrast: none) {
+    body {
+        font-family: Verdana, 'Noto Sans JP', Meiryo, sans-serif;
+    }
+}
+#archives-title,
+.mce-content-body,
+h1,
+.mce-content-body h2,
+h2,
+.mce-content-body h3,
+h3,
+.mce-content-body .h1,
+.h1,
+.mce-content-body .h2,
+.h2,
+.mce-content-body .h3,
+.h3{
+    font-family: "-apple-system", "Helvetica Neue", Meiryo, "Yu Gothic", YuGothic, Verdana, sans-serif;
+}
+.rd-modal .header h3{
+    margin-top:0;
+    margin-bottom:0;
+}
+/* Raindrops new h1-h6 font size from ver 0.996 start */
+
+#site-title{
+    margin:.5em 0;
+    letter-spacing: -.04em;
+}
+.entry-title{
+    font-weight:700;
+}
+.mce-content-body .h1:not(h1),
+.mce-content-body h1,
+.h1:not(h1){
+    font-size:197%;
+}
+
+.mce-content-body .h2:not(h2),
+.mce-content-body h2,
+.h2:not(h2),
+h2{
+    font-size:153.9%;
+}
+.mce-content-body .h3:not(h3),
+.mce-content-body h3,
+.h3:not(h3),
+h3{
+    font-size:116%;
+}
+.ja.date .entry-title,
+.mce-content-body .h4:not(h3),
+.mce-content-body h4,
+.h4:not(h4),
+h4{
+    font-size:100%;
+}
+.mce-content-body .h5:not(h3),
+.mce-content-body h5,
+.h5:not(h5),
+h5{
+    font-size:85%;
+}
+.mce-content-body .h6:not(h3),
+.mce-content-body h6,
+.h6:not(h6),
+h6{
+    font-size:xx-small;
+}
+/* Raindrops new h1-h6 font size from ver 0.996 end */ 
+.topsidebar h2,
+.footer-widget h2,
+.rsidebar h2,
+.lsidebar h2,
+.widgettitle h2,
+h2.footer-content {
+    padding:5px 0;                          
+}
+.author .entry-title{
+    display:inline-block;
+    margin-left:.6em;
+}
+
+#list-of-post ol .entry-title{
+    font-weight:normal!important;
+}
+.entry-content .itaric,
+i{
+    font-style: italic;
+}
+.entry-content em{ /* @1.511 */
+    -webkit-text-emphasis-style: filled circle;
+    text-emphasis-style: filled circle;
+    font-style:normal;
+    font-weight:normal;
+    -webkit-text-emphasis-color:#888;
+    text-emphasis-color:#888;
+}
+.entry-content .gallery-infomation{
+    -webkit-text-emphasis-style: none;
+    text-emphasis-style: none;    
+}
+.widget_recent_comments .recentcomments{
+    visibility:hidden;
+}
+.widget_recent_comments .recentcomments a,
+.widget_recent_comments .recentcomments span,
+.widget_recent_comments .recentcomments img{
+    visibility:visible;
+}
+.widget_recent_comments .comment-author-link{
+    border-bottom:1px dotted rgba(122,122,122,.5);
+    display:block;
+    margin-bottom:-1.5em;
+}
+
+.raindrops-excerpt-more{
+    width:8em;
+}
+.entry-content ins:hover::before{
+    content:'\633f \5165 ';
+}
+.entry-content del:hover::before{
+    content:'\524a \9664 ';
+}
+
+/* @1.329 ol.sectioned class render sectioned number lists */
+.mce-content-body .sectioned li:before,
+.ja .entry-content .sectioned li:before {
+    content : '\7b2c ' counters(sectioned, '.') '\7ae0 \00a0 \00a0 \00a0';
+    counter-increment : sectioned;
+}
+.mce-content-body  .sectioned li li:before,
+.ja .entry-content .sectioned li li:before {
+    content : counters(sectioned,'\7ae0') '\7bc0 \00a0 \00a0 \00a0';
+    counter-increment : sectioned;
+}
+.mce-content-body  .sectioned li li li:before,
+.ja .entry-content .sectioned li li li:before {
+    content : counters(sectioned, '-') '\9805 \00a0 \00a0 \00a0';
+    counter-increment : sectioned;
+}
+.mce-content-body  .sectioned li li li li:before,
+.ja .entry-content .sectioned li li li li:before{
+    content:'';
+}
+.ja .rd-modal h3{
+    margin:0;
+}
+/**
+ * font weight
+ */
+.b1 .site-title-link,
+.entry-title.b1,
+.thin,
+.b1{
+    font-weight:100;
+}
+.b2 .site-title-link,
+.entry-title.b2,
+.b2{
+    font-weight:200;
+}
+.b3 .site-title-link,
+.entry-title.b3,
+.b3{
+    font-weight:300;
+}
+.b4 .site-title-link,
+.entry-title.b4,
+.b4{
+    font-weight:400;
+}
+.b5 .site-title-link,
+.entry-title.b5,
+.b5{
+    font-weight:500;
+}
+.b6 .site-title-link,
+.entry-title.b6,
+.b6{
+    font-weight:600;
+}
+.b7 .site-title-link,
+.entry-title.b7,
+.bold,
+.b7{
+    font-weight:700;
+}
+.b8 .site-title-link,
+.entry-title.b8,
+.b8{
+    font-weight:800;
+}
+.b9 .site-title-link,
+.entry-title.b9,
+.b9{
+    font-weight:900;
+}
+.noto-sans-jp{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.ja figcaption{
+    font-style:normal;
+}
+/*
+.ja .textwidget p > a:not(.attachment),
+.ja .entry-content p > a:not(.attachment){
+    margin-left:.5em;
+    margin-right:.5em;
+}*/
+
+.rd-pw-doc5.rd-col-1.single .writing-mode-mix{
+    margin-top:1.5em;
+}

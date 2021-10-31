@@ -1,0 +1,958 @@
+<!DOCTYPE html><html
+lang="fr-FR" prefix="og: http://ogp.me/ns#"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width,initial-scale=1.0"><link
+rel="pingback" href="https://www.hostinger.fr/tutoriels/xmlrpc.php"><link
+type="text/css" media="all" href="https://www.hostinger.fr/tutoriels/wp-content/cache/autoptimize/9/css/autoptimize_63dc24ba5d1d4468190dee7b3f3edb21.css" rel="stylesheet" /><title>Créer un widget WordPress facilement et simplement</title><meta
+name="description" content="Vous aimeriez créer un widget WordPress facilement ? Nous vous montrons quelques astuces pour y arriver dans notre guide !"/><link
+rel="canonical" href="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" /><meta
+property="og:locale" content="fr_FR" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Créer un widget WordPress facilement et simplement" /><meta
+property="og:description" content="Vous aimeriez créer un widget WordPress facilement ? Nous vous montrons quelques astuces pour y arriver dans notre guide !" /><meta
+property="og:url" content="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" /><meta
+property="og:site_name" content="Hostinger Tutoriels" /><meta
+property="article:tag" content="créer un widget" /><meta
+property="article:tag" content="créer un widget wordpress" /><meta
+property="article:tag" content="widgets wordpress" /><meta
+property="article:section" content="WordPress" /><meta
+property="article:published_time" content="2017-09-19T09:29:31+00:00" /><meta
+property="og:image" content="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg" /><meta
+property="og:image:secure_url" content="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg" /><meta
+property="og:image:width" content="900" /><meta
+property="og:image:height" content="560" /><meta
+name="twitter:card" content="summary" /><meta
+name="twitter:description" content="Vous aimeriez créer un widget WordPress facilement ? Nous vous montrons quelques astuces pour y arriver dans notre guide !" /><meta
+name="twitter:title" content="Créer un widget WordPress facilement et simplement" /><meta
+name="twitter:image" content="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg" /> <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.hostinger.fr\/tutoriels\/","name":"Hostinger Tutoriels","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.hostinger.fr\/tutoriels\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script> <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.hostinger.fr\/tutoriels\/creer-un-widget-wordpress\/","sameAs":[],"@id":"#organization","name":"Hostinger","logo":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/uploads\/sites\/9\/2017\/05\/hostinger-logo.png"}</script> <link
+rel="amphtml" href="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/amp/" /><link
+rel='dns-prefetch' href='//static.mailerlite.com' /><link
+rel='dns-prefetch' href='//a.optmnstr.com' /><link
+rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Hostinger Tutoriels &raquo; Flux" href="https://www.hostinger.fr/tutoriels/feed/" /><link
+rel="alternate" type="application/rss+xml" title="Hostinger Tutoriels &raquo; Flux des commentaires" href="https://www.hostinger.fr/tutoriels/comments/feed/" /><link
+rel="alternate" type="application/rss+xml" title="Hostinger Tutoriels &raquo; Créer un widget WordPress facilement et simplement Flux des commentaires" href="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/feed/" /> <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.hostinger.fr\/tutoriels\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);</script> <style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style><link
+rel='stylesheet' id='herald-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C600&#038;subset=latin%2Clatin-ext&#038;ver=1.6' type='text/css' media='all' /><style id='herald-main-inline-css' type='text/css'>.herald-site-header .header-top,.header-top .herald-in-popup,.header-top .herald-menu ul{background: #5435b0;color: #ffffff;}.header-top a{color: #ffffff;}.header-top a:hover,.header-top .herald-menu li:hover > a{color: #ffffff;}.header-top .herald-menu-popup:hover > span,.header-top .herald-menu-popup-search span:hover,.header-top .herald-menu-popup-search.herald-search-active{color: #ffffff;}#wp-calendar tbody td a{background: #6747c7;color:#FFF;}.header-middle{background-color: #6747c7;color: #ffffff;}.header-middle a{color: #ffffff;}.header-middle.herald-header-wraper,.header-middle .col-lg-12{height: 74px;}.header-middle .sub-menu{background-color: #ffffff;}.header-middle .sub-menu a,.header-middle .herald-search-submit:hover,.header-middle li.herald-mega-menu .col-lg-3 a:hover,.header-middle li.herald-mega-menu .col-lg-3 a:hover:after{color: #111111;}.header-middle .herald-menu li:hover > a,.header-middle .herald-menu-popup-search:hover > span{color: #111111;background-color: #ffffff;}.header-middle .current-menu-parent a,.header-middle .current-menu-ancestor a,.header-middle .current_page_item > a,.header-middle .current-menu-item > a{background-color: rgba(255,255,255,0.2); }.header-middle .sub-menu > li > a,.header-middle .herald-search-submit,.header-middle li.herald-mega-menu .col-lg-3 a{color: rgba(17,17,17,0.7); }.header-middle .sub-menu > li:hover > a{color: #111111; }.header-middle .herald-in-popup{background-color: #ffffff;}.header-middle .herald-menu-popup a{color: #111111;}.header-middle .herald-in-popup{background-color: #ffffff;}.header-middle .herald-search-input{color: #111111;}.header-middle .herald-menu-popup a{color: #111111;}.header-middle .herald-menu-popup > span,.header-middle .herald-search-active > span{color: #ffffff;}.header-middle .herald-menu-popup:hover > span,.header-middle .herald-search-active > span{background-color: #ffffff;color: #111111;}.header-bottom{background: #5435b0;color: #ffffff;}.header-bottom a,.header-bottom .herald-site-header .herald-search-submit{color: #ffffff;}.header-bottom a:hover{color: #957fd5;}.header-bottom a:hover,.header-bottom .herald-menu li:hover > a,.header-bottom li.herald-mega-menu .col-lg-3 a:hover:after{color: #957fd5;}.header-bottom .herald-menu li:hover > a,.header-bottom .herald-menu-popup-search:hover > span{color: #957fd5;background-color: #ffffff;}.header-bottom .current-menu-parent a,.header-bottom .current-menu-ancestor a,.header-bottom .current_page_item > a,.header-bottom .current-menu-item > a {background-color: rgba(255,255,255,0.2); }.header-bottom .sub-menu{background-color: #ffffff;}.header-bottom .herald-menu li.herald-mega-menu .col-lg-3 a,.header-bottom .sub-menu > li > a,.header-bottom .herald-search-submit{color: rgba(149,127,213,0.7); }.header-bottom .herald-menu li.herald-mega-menu .col-lg-3 a:hover,.header-bottom .sub-menu > li:hover > a{color: #957fd5; }.header-bottom .sub-menu > li > a,.header-bottom .herald-search-submit{color: rgba(149,127,213,0.7); }.header-bottom .sub-menu > li:hover > a{color: #957fd5; }.header-bottom .herald-in-popup{background-color: #ffffff;}.header-bottom .herald-menu-popup a{color: #957fd5;}.header-bottom .herald-in-popup,.header-bottom .herald-search-input{background-color: #ffffff;}.header-bottom .herald-menu-popup a,.header-bottom .herald-search-input{color: #957fd5;}.header-bottom .herald-menu-popup > span,.header-bottom .herald-search-active > span{color: #ffffff;}.header-bottom .herald-menu-popup:hover > span,.header-bottom .herald-search-active > span{background-color: #ffffff;color: #957fd5;}.herald-header-sticky{background: #6747c7;color: #ffffff;}.herald-header-sticky a{color: #ffffff;}.herald-header-sticky .herald-menu li:hover > a{color: #444444;background-color: #ffffff;}.herald-header-sticky .sub-menu{background-color: #ffffff;}.herald-header-sticky .sub-menu a{color: #444444;}.herald-header-sticky .sub-menu > li:hover > a{color: #6747c7;}.herald-header-sticky .herald-in-popup,.herald-header-sticky .herald-search-input{background-color: #ffffff;}.herald-header-sticky .herald-menu-popup a{color: #444444;}.herald-header-sticky .herald-menu-popup > span,.herald-header-sticky .herald-search-active > span{color: #ffffff;}.herald-header-sticky .herald-menu-popup:hover > span,.herald-header-sticky .herald-search-active > span{background-color: #ffffff;color: #444444;}.herald-header-sticky .herald-search-input,.herald-header-sticky .herald-search-submit{color: #444444;}.herald-header-sticky .herald-menu li:hover > a,.herald-header-sticky .herald-menu-popup-search:hover > span{color: #444444;background-color: #ffffff;}.header-trending{background: #eeeeee;color: #666666;}.header-trending a{color: #666666;}.header-trending a:hover{color: #111111;}body { background-color: #ffffff;color: #444444;font-family: 'Open Sans';font-weight: 400;}.herald-site-content{background-color:#ffffff;}h1, h2, h3, h4, h5, h6,.h1, .h2, .h3, .h4, .h5, .h6, .h7{font-family: 'Open Sans';font-weight: 700;}.header-middle .herald-menu,.header-bottom .herald-menu,.herald-header-sticky .herald-menu,.herald-mobile-nav{font-family: 'Open Sans';font-weight: 600;}.herald-menu li.herald-mega-menu .herald-ovrld .meta-category a{font-family: 'Open Sans';font-weight: 400;}.herald-entry-content blockquote p{color: #6747c7;}pre {background: rgba(68,68,68,0.06);border: 1px solid rgba(68,68,68,0.2);}thead {background: rgba(68,68,68,0.06);}a,.entry-title a:hover,.herald-menu .sub-menu li .meta-category a{color: #6747c7;}.entry-meta-wrapper .entry-meta span:before,.entry-meta-wrapper .entry-meta a:before,.entry-meta-wrapper .entry-meta .meta-item:before,.entry-meta-wrapper .entry-meta div,li.herald-mega-menu .sub-menu .entry-title a,.entry-meta-wrapper .herald-author-twitter{color: #444444;}.herald-mod-title h1,.herald-mod-title h2,.herald-mod-title h4{color: #ffffff;}.herald-mod-head:after,.herald-mod-title .herald-color,.widget-title:after,.widget-title span{color: #ffffff;background-color: #333333;}.herald-mod-title .herald-color a{color: #ffffff;}.herald-ovrld .meta-category a,.herald-fa-wrapper .meta-category a{background-color: #6747c7;}.meta-tags a,.widget_tag_cloud a,.herald-share-meta:after{background: rgba(51,51,51,0.1);}h1, h2, h3, h4, h5, h6,.entry-title a {color: #333333;}.herald-pagination .page-numbers,.herald-mod-subnav a,.herald-mod-actions a,.herald-slider-controls div,.meta-tags a,.widget.widget_tag_cloud a,.herald-sidebar .mks_autor_link_wrap a,.mks_themeforest_widget .mks_read_more a,.herald-read-more{color: #444444;}.widget.widget_tag_cloud a:hover,.entry-content .meta-tags a:hover{background-color: #6747c7;color: #FFF;}.herald-pagination .prev.page-numbers,.herald-pagination .next.page-numbers,.herald-pagination .prev.page-numbers:hover,.herald-pagination .next.page-numbers:hover,.herald-pagination .page-numbers.current,.herald-pagination .page-numbers.current:hover,.herald-next a,.herald-pagination .herald-next a:hover,.herald-prev a,.herald-pagination .herald-prev a:hover,.herald-load-more a,.herald-load-more a:hover,.entry-content .herald-search-submit,.herald-mod-desc .herald-search-submit,.wpcf7-submit{background-color:#6747c7;color: #FFF;}.herald-pagination .page-numbers:hover{background-color: rgba(68,68,68,0.1);}.widget a,.recentcomments a,.widget a:hover,.herald-sticky-next a:hover,.herald-sticky-prev a:hover,.herald-mod-subnav a:hover,.herald-mod-actions a:hover,.herald-slider-controls div:hover,.meta-tags a:hover,.widget_tag_cloud a:hover,.mks_autor_link_wrap a:hover,.mks_themeforest_widget .mks_read_more a:hover,.herald-read-more:hover,.widget .entry-title a:hover,li.herald-mega-menu .sub-menu .entry-title a:hover,.entry-meta-wrapper .meta-item:hover a,.entry-meta-wrapper .meta-item:hover a:before,.entry-meta-wrapper .herald-share:hover > span,.entry-meta-wrapper .herald-author-name:hover,.entry-meta-wrapper .herald-author-twitter:hover,.entry-meta-wrapper .herald-author-twitter:hover:before{color:#6747c7;}.widget ul li a,.widget .entry-title a,.herald-author-name,.entry-meta-wrapper .meta-item,.entry-meta-wrapper .meta-item span,.entry-meta-wrapper .meta-item a,.herald-mod-actions a{color: #444444;}.widget li:before{background: rgba(68,68,68,0.3);}.widget_categories .count{background: #6747c7;color: #FFF;}input[type="submit"],.spinner > div{background-color: #6747c7;}.herald-mod-actions a:hover,.comment-body .edit-link a,.herald-breadcrumbs a:hover{color:#6747c7;}.herald-header-wraper .herald-soc-nav a:hover,.meta-tags span,li.herald-mega-menu .herald-ovrld .entry-title a,li.herald-mega-menu .herald-ovrld .entry-title a:hover,.herald-ovrld .entry-meta .herald-reviews i:before{color: #FFF;}.entry-meta .meta-item, .entry-meta span, .entry-meta a,.meta-category span,.post-date,.recentcomments,.rss-date,.comment-metadata a,.entry-meta a:hover,.herald-menu li.herald-mega-menu .col-lg-3 a:after,.herald-breadcrumbs,.herald-breadcrumbs a,.entry-meta .herald-reviews i:before{color: #999999;}.herald-lay-a .herald-lay-over{background: #ffffff;}.herald-pagination a:hover,input[type="submit"]:hover,.entry-content .herald-search-submit:hover,.wpcf7-submit:hover,.herald-fa-wrapper .meta-category a:hover,.herald-ovrld .meta-category a:hover,.herald-mod-desc .herald-search-submit:hover,.herald-single-sticky .herald-share li a:hover{cursor: pointer;text-decoration: none;background-image: -moz-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(0,0,0,0.1)),color-stop(100%,rgba(0,0,0,0.1)));background-image: -webkit-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -o-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: -ms-linear-gradient(left,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);background-image: linear-gradient(to right,rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%);}.herald-sticky-next a,.herald-sticky-prev a{color: #444444;}.herald-sticky-prev a:before,.herald-sticky-next a:before,.herald-comment-action,.meta-tags span,.herald-entry-content .herald-link-pages a{background: #444444;}.herald-sticky-prev a:hover:before,.herald-sticky-next a:hover:before,.herald-comment-action:hover,div.mejs-controls .mejs-time-rail .mejs-time-current,.herald-entry-content .herald-link-pages a:hover{background: #6747c7;} .herald-site-footer{background: #222222;color: #dddddd;}.herald-site-footer .widget-title span{color: #dddddd;background: transparent;}.herald-site-footer .widget-title:before{background:#dddddd;}.herald-site-footer .widget-title:after,.herald-site-footer .widget_tag_cloud a{background: rgba(221,221,221,0.1);}.herald-site-footer .widget li:before{background: rgba(221,221,221,0.3);}.herald-site-footer a,.herald-site-footer .widget a:hover,.herald-site-footer .widget .meta-category a,.herald-site-footer .herald-slider-controls .owl-prev:hover,.herald-site-footer .herald-slider-controls .owl-next:hover,.herald-site-footer .herald-slider-controls .herald-mod-actions:hover{color: #957fd5;}.herald-site-footer .widget a,.herald-site-footer .mks_author_widget h3{color: #dddddd;}.herald-site-footer .entry-meta .meta-item, .herald-site-footer .entry-meta span, .herald-site-footer .entry-meta a, .herald-site-footer .meta-category span, .herald-site-footer .post-date, .herald-site-footer .recentcomments, .herald-site-footer .rss-date, .herald-site-footer .comment-metadata a{color: #aaaaaa;}.herald-site-footer .mks_author_widget .mks_autor_link_wrap a, .herald-site-footer.mks_read_more a, .herald-site-footer .herald-read-more,.herald-site-footer .herald-slider-controls .owl-prev, .herald-site-footer .herald-slider-controls .owl-next, .herald-site-footer .herald-mod-wrap .herald-mod-actions a{border-color: rgba(221,221,221,0.2);}.herald-site-footer .mks_author_widget .mks_autor_link_wrap a:hover, .herald-site-footer.mks_read_more a:hover, .herald-site-footer .herald-read-more:hover,.herald-site-footer .herald-slider-controls .owl-prev:hover, .herald-site-footer .herald-slider-controls .owl-next:hover, .herald-site-footer .herald-mod-wrap .herald-mod-actions a:hover{border-color: rgba(149,127,213,0.5);}.herald-site-footer .widget_search .herald-search-input{color: #222222;}.herald-site-footer .widget_tag_cloud a:hover{background:#957fd5;color:#FFF;}.footer-bottom a{color:#dddddd;}.footer-bottom a:hover,.footer-bottom .herald-copyright a{color:#957fd5;}.footer-bottom .herald-menu li:hover > a{color: #957fd5;}.footer-bottom .sub-menu{background-color: rgba(0,0,0,0.5);} .herald-pagination{border-top: 1px solid rgba(51,51,51,0.1);}.entry-content a:hover,.comment-respond a:hover,.comment-reply-link:hover{border-bottom: 2px solid #6747c7;}.footer-bottom .herald-copyright a:hover{border-bottom: 2px solid #957fd5;}.herald-slider-controls .owl-prev,.herald-slider-controls .owl-next,.herald-mod-wrap .herald-mod-actions a{border: 1px solid rgba(68,68,68,0.2);}.herald-slider-controls .owl-prev:hover,.herald-slider-controls .owl-next:hover,.herald-mod-wrap .herald-mod-actions a:hover,.herald-author .herald-socials-actions .herald-mod-actions a:hover {border-color: rgba(103,71,199,0.5);}.herald-pagination,.herald-link-pages,#wp-calendar thead th,#wp-calendar tbody td,#wp-calendar tbody td:last-child{border-color: rgba(68,68,68,0.1);}.herald-lay-h:after,.herald-site-content .herald-related .herald-lay-h:after,.herald-lay-e:after,.herald-site-content .herald-related .herald-lay-e:after,.herald-lay-j:after,.herald-site-content .herald-related .herald-lay-j:after,.herald-lay-l:after,.herald-site-content .herald-related .herald-lay-l:after {background-color: rgba(68,68,68,0.1);}input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="number"], input[type="date"], input[type="password"], select, textarea,.herald-single-sticky,td,th,table,.mks_author_widget .mks_autor_link_wrap a,.mks_read_more a,.herald-read-more{border-color: rgba(68,68,68,0.2);}.entry-content .herald-search-input,.herald-fake-button,input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="password"]:focus, textarea:focus{border-color: rgba(68,68,68,0.3);}.mks_author_widget .mks_autor_link_wrap a:hover,.mks_read_more a:hover,.herald-read-more:hover{border-color: rgba(103,71,199,0.5);}.comment-form,.herald-gray-area,.entry-content .herald-search-form,.herald-mod-desc .herald-search-form{background-color: rgba(68,68,68,0.06);border: 1px solid rgba(68,68,68,0.15);}.herald-boxed .herald-breadcrumbs{background-color: rgba(68,68,68,0.06);}.herald-breadcrumbs{border-color: rgba(68,68,68,0.15);}.single .herald-entry-content .herald-ad,.archive .herald-posts .herald-ad{border-top: 1px solid rgba(68,68,68,0.15);}.archive .herald-posts .herald-ad{border-bottom: 1px solid rgba(68,68,68,0.15);}li.comment .comment-body:after{background-color: rgba(68,68,68,0.06);}.herald-pf-invert .entry-title a:hover .herald-format-icon{background: #6747c7;}.herald-responsive-header,.herald-mobile-nav,.herald-responsive-header .herald-menu-popup-search .fa{color: #ffffff;background: #6747c7;}.herald-responsive-header a{color: #ffffff;}.herald-mobile-nav li a{color: #ffffff;}.herald-mobile-nav li a,.herald-mobile-nav .herald-mega-menu.herald-mega-menu-classic>.sub-menu>li>a{border-bottom: 1px solid rgba(255,255,255,0.15);}.herald-mobile-nav{border-right: 1px solid rgba(255,255,255,0.15);}.herald-mobile-nav li a:hover{color: #fff;background-color: #111111;}.herald-menu-toggler{color: #ffffff;border-color: rgba(255,255,255,0.15);}.herald-goto-top{color: #ffffff;background-color: #333333;}.herald-goto-top:hover{background-color: #6747c7;}.herald-responsive-header .herald-menu-popup > span,.herald-responsive-header .herald-search-active > span{color: #ffffff;}.herald-responsive-header .herald-menu-popup-search .herald-in-popup{background: #ffffff;}.herald-responsive-header .herald-search-input,.herald-responsive-header .herald-menu-popup-search .herald-search-submit{color: #444444;}a.herald-cat-4761 , .widget a.herald-cat-4761{ color: #7cc576;}.herald-mod-head.herald-cat-4761:after{ background:#7cc576; }.herald-mod-head.herald-cat-4761 .herald-color { background:#7cc576; }.herald-ovrld .meta-category a.herald-cat-4761{ background-color: #7cc576; color: #FFF;}.widget_categories .cat-item-4761 .count { background-color: #7cc576;}.herald-fa-colored .herald-cat-4761 .fa-post-thumbnail:before { background-color: #7cc576;}.herald-fa-wrapper .meta-category .herald-cat-4761 { background-color: #7cc576;}.widget_categories .cat-item-4761 a:hover { color: #7cc576;}.herald-site-footer .widget a.herald-cat-4761 { color: #7cc576;}li.herald-mega-menu .sub-menu a.herald-cat-4761 { color: #7cc576;}a.herald-cat-4781 , .widget a.herald-cat-4781{ color: #dd007d;}.herald-mod-head.herald-cat-4781:after{ background:#dd007d; }.herald-mod-head.herald-cat-4781 .herald-color { background:#dd007d; }.herald-ovrld .meta-category a.herald-cat-4781{ background-color: #dd007d; color: #FFF;}.widget_categories .cat-item-4781 .count { background-color: #dd007d;}.herald-fa-colored .herald-cat-4781 .fa-post-thumbnail:before { background-color: #dd007d;}.herald-fa-wrapper .meta-category .herald-cat-4781 { background-color: #dd007d;}.widget_categories .cat-item-4781 a:hover { color: #dd007d;}.herald-site-footer .widget a.herald-cat-4781 { color: #dd007d;}li.herald-mega-menu .sub-menu a.herald-cat-4781 { color: #dd007d;}a.herald-cat-4805 , .widget a.herald-cat-4805{ color: #a053e8;}.herald-mod-head.herald-cat-4805:after{ background:#a053e8; }.herald-mod-head.herald-cat-4805 .herald-color { background:#a053e8; }.herald-ovrld .meta-category a.herald-cat-4805{ background-color: #a053e8; color: #FFF;}.widget_categories .cat-item-4805 .count { background-color: #a053e8;}.herald-fa-colored .herald-cat-4805 .fa-post-thumbnail:before { background-color: #a053e8;}.herald-fa-wrapper .meta-category .herald-cat-4805 { background-color: #a053e8;}.widget_categories .cat-item-4805 a:hover { color: #a053e8;}.herald-site-footer .widget a.herald-cat-4805 { color: #a053e8;}li.herald-mega-menu .sub-menu a.herald-cat-4805 { color: #a053e8;}a.herald-cat-4792 , .widget a.herald-cat-4792{ color: #ff9645;}.herald-mod-head.herald-cat-4792:after{ background:#ff9645; }.herald-mod-head.herald-cat-4792 .herald-color { background:#ff9645; }.herald-ovrld .meta-category a.herald-cat-4792{ background-color: #ff9645; color: #FFF;}.widget_categories .cat-item-4792 .count { background-color: #ff9645;}.herald-fa-colored .herald-cat-4792 .fa-post-thumbnail:before { background-color: #ff9645;}.herald-fa-wrapper .meta-category .herald-cat-4792 { background-color: #ff9645;}.widget_categories .cat-item-4792 a:hover { color: #ff9645;}.herald-site-footer .widget a.herald-cat-4792 { color: #ff9645;}li.herald-mega-menu .sub-menu a.herald-cat-4792 { color: #ff9645;}a.herald-cat-4806 , .widget a.herald-cat-4806{ color: #a0a0a0;}.herald-mod-head.herald-cat-4806:after{ background:#a0a0a0; }.herald-mod-head.herald-cat-4806 .herald-color { background:#a0a0a0; }.herald-ovrld .meta-category a.herald-cat-4806{ background-color: #a0a0a0; color: #FFF;}.widget_categories .cat-item-4806 .count { background-color: #a0a0a0;}.herald-fa-colored .herald-cat-4806 .fa-post-thumbnail:before { background-color: #a0a0a0;}.herald-fa-wrapper .meta-category .herald-cat-4806 { background-color: #a0a0a0;}.widget_categories .cat-item-4806 a:hover { color: #a0a0a0;}.herald-site-footer .widget a.herald-cat-4806 { color: #a0a0a0;}li.herald-mega-menu .sub-menu a.herald-cat-4806 { color: #a0a0a0;}a.herald-cat-4804 , .widget a.herald-cat-4804{ color: #00c7dd;}.herald-mod-head.herald-cat-4804:after{ background:#00c7dd; }.herald-mod-head.herald-cat-4804 .herald-color { background:#00c7dd; }.herald-ovrld .meta-category a.herald-cat-4804{ background-color: #00c7dd; color: #FFF;}.widget_categories .cat-item-4804 .count { background-color: #00c7dd;}.herald-fa-colored .herald-cat-4804 .fa-post-thumbnail:before { background-color: #00c7dd;}.herald-fa-wrapper .meta-category .herald-cat-4804 { background-color: #00c7dd;}.widget_categories .cat-item-4804 a:hover { color: #00c7dd;}.herald-site-footer .widget a.herald-cat-4804 { color: #00c7dd;}li.herald-mega-menu .sub-menu a.herald-cat-4804 { color: #00c7dd;}a.herald-cat-4760 , .widget a.herald-cat-4760{ color: #00b6ff;}.herald-mod-head.herald-cat-4760:after{ background:#00b6ff; }.herald-mod-head.herald-cat-4760 .herald-color { background:#00b6ff; }.herald-ovrld .meta-category a.herald-cat-4760{ background-color: #00b6ff; color: #FFF;}.widget_categories .cat-item-4760 .count { background-color: #00b6ff;}.herald-fa-colored .herald-cat-4760 .fa-post-thumbnail:before { background-color: #00b6ff;}.herald-fa-wrapper .meta-category .herald-cat-4760 { background-color: #00b6ff;}.widget_categories .cat-item-4760 a:hover { color: #00b6ff;}.herald-site-footer .widget a.herald-cat-4760 { color: #00b6ff;}li.herald-mega-menu .sub-menu a.herald-cat-4760 { color: #00b6ff;}a.herald-cat-4777 , .widget a.herald-cat-4777{ color: #ff4546;}.herald-mod-head.herald-cat-4777:after{ background:#ff4546; }.herald-mod-head.herald-cat-4777 .herald-color { background:#ff4546; }.herald-ovrld .meta-category a.herald-cat-4777{ background-color: #ff4546; color: #FFF;}.widget_categories .cat-item-4777 .count { background-color: #ff4546;}.herald-fa-colored .herald-cat-4777 .fa-post-thumbnail:before { background-color: #ff4546;}.herald-fa-wrapper .meta-category .herald-cat-4777 { background-color: #ff4546;}.widget_categories .cat-item-4777 a:hover { color: #ff4546;}.herald-site-footer .widget a.herald-cat-4777 { color: #ff4546;}li.herald-mega-menu .sub-menu a.herald-cat-4777 { color: #ff4546;}a.herald-cat-4811 , .widget a.herald-cat-4811{ color: #4453bf;}.herald-mod-head.herald-cat-4811:after{ background:#4453bf; }.herald-mod-head.herald-cat-4811 .herald-color { background:#4453bf; }.herald-ovrld .meta-category a.herald-cat-4811{ background-color: #4453bf; color: #FFF;}.widget_categories .cat-item-4811 .count { background-color: #4453bf;}.herald-fa-colored .herald-cat-4811 .fa-post-thumbnail:before { background-color: #4453bf;}.herald-fa-wrapper .meta-category .herald-cat-4811 { background-color: #4453bf;}.widget_categories .cat-item-4811 a:hover { color: #4453bf;}.herald-site-footer .widget a.herald-cat-4811 { color: #4453bf;}li.herald-mega-menu .sub-menu a.herald-cat-4811 { color: #4453bf;}a.herald-cat-4808 , .widget a.herald-cat-4808{ color: #48c984;}.herald-mod-head.herald-cat-4808:after{ background:#48c984; }.herald-mod-head.herald-cat-4808 .herald-color { background:#48c984; }.herald-ovrld .meta-category a.herald-cat-4808{ background-color: #48c984; color: #FFF;}.widget_categories .cat-item-4808 .count { background-color: #48c984;}.herald-fa-colored .herald-cat-4808 .fa-post-thumbnail:before { background-color: #48c984;}.herald-fa-wrapper .meta-category .herald-cat-4808 { background-color: #48c984;}.widget_categories .cat-item-4808 a:hover { color: #48c984;}.herald-site-footer .widget a.herald-cat-4808 { color: #48c984;}li.herald-mega-menu .sub-menu a.herald-cat-4808 { color: #48c984;}a.herald-cat-4807 , .widget a.herald-cat-4807{ color: #e5bd4e;}.herald-mod-head.herald-cat-4807:after{ background:#e5bd4e; }.herald-mod-head.herald-cat-4807 .herald-color { background:#e5bd4e; }.herald-ovrld .meta-category a.herald-cat-4807{ background-color: #e5bd4e; color: #FFF;}.widget_categories .cat-item-4807 .count { background-color: #e5bd4e;}.herald-fa-colored .herald-cat-4807 .fa-post-thumbnail:before { background-color: #e5bd4e;}.herald-fa-wrapper .meta-category .herald-cat-4807 { background-color: #e5bd4e;}.widget_categories .cat-item-4807 a:hover { color: #e5bd4e;}.herald-site-footer .widget a.herald-cat-4807 { color: #e5bd4e;}li.herald-mega-menu .sub-menu a.herald-cat-4807 { color: #e5bd4e;}a.herald-cat-4809 , .widget a.herald-cat-4809{ color: #4d7dd6;}.herald-mod-head.herald-cat-4809:after{ background:#4d7dd6; }.herald-mod-head.herald-cat-4809 .herald-color { background:#4d7dd6; }.herald-ovrld .meta-category a.herald-cat-4809{ background-color: #4d7dd6; color: #FFF;}.widget_categories .cat-item-4809 .count { background-color: #4d7dd6;}.herald-fa-colored .herald-cat-4809 .fa-post-thumbnail:before { background-color: #4d7dd6;}.herald-fa-wrapper .meta-category .herald-cat-4809 { background-color: #4d7dd6;}.widget_categories .cat-item-4809 a:hover { color: #4d7dd6;}.herald-site-footer .widget a.herald-cat-4809 { color: #4d7dd6;}li.herald-mega-menu .sub-menu a.herald-cat-4809 { color: #4d7dd6;}a.herald-cat-4810 , .widget a.herald-cat-4810{ color: #d34dd6;}.herald-mod-head.herald-cat-4810:after{ background:#d34dd6; }.herald-mod-head.herald-cat-4810 .herald-color { background:#d34dd6; }.herald-ovrld .meta-category a.herald-cat-4810{ background-color: #d34dd6; color: #FFF;}.widget_categories .cat-item-4810 .count { background-color: #d34dd6;}.herald-fa-colored .herald-cat-4810 .fa-post-thumbnail:before { background-color: #d34dd6;}.herald-fa-wrapper .meta-category .herald-cat-4810 { background-color: #d34dd6;}.widget_categories .cat-item-4810 a:hover { color: #d34dd6;}.herald-site-footer .widget a.herald-cat-4810 { color: #d34dd6;}li.herald-mega-menu .sub-menu a.herald-cat-4810 { color: #d34dd6;}.site-title a{text-transform: none;}.site-description{text-transform: none;}.main-navigation{text-transform: uppercase;}.entry-title{text-transform: none;}.meta-category a{text-transform: uppercase;}.herald-mod-title{text-transform: none;}.herald-sidebar .widget-title{text-transform: none;}.herald-site-footer .widget-title{text-transform: none;}.fa-post-thumbnail:before, .herald-ovrld .herald-post-thumbnail span:before, .herald-ovrld .herald-post-thumbnail a:before { opacity: 0.5; }.herald-fa-item:hover .fa-post-thumbnail:before, .herald-ovrld:hover .herald-post-thumbnail a:before, .herald-ovrld:hover .herald-post-thumbnail span:before{ opacity: 0.8; }@media only screen and (min-width: 1024px) {.herald-site-header .header-top,.header-middle,.header-bottom,.herald-header-sticky,.header-trending{ display:block !important;}.herald-responsive-header,.herald-mobile-nav{display:none !important;}.herald-site-content {margin-top: 0 !important;}.herald-mega-menu .sub-menu {display: block;}}</style><style id='wpgdprc.css-inline-css' type='text/css'>div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:before { content: 'Yes'; }
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:after { content: 'No'; }</style> <script type='text/javascript' src='https://www.hostinger.fr/tutoriels/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> <script type='text/javascript'>var ajaxsearchlite = {"ajaxurl":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","backend_ajaxurl":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","js_scope":"jQuery"};
+var ASL = {"ajaxurl":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","backend_ajaxurl":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","js_scope":"jQuery","detect_ajax":"0","scrollbar":"1","js_retain_popstate":"0","version":"4728"};</script> <script type='text/javascript' src='https://static.mailerlite.com/js/jquery.validate.min.js?ver=4.9.8'></script> <script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.optmnstr.com/app/js/api.min.js'></script> <link
+rel='https://api.w.org/' href='https://www.hostinger.fr/tutoriels/wp-json/' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hostinger.fr/tutoriels/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.hostinger.fr/tutoriels/wp-includes/wlwmanifest.xml" /><meta
+name="generator" content="WordPress 4.9.8" /><link
+rel='shortlink' href='https://www.hostinger.fr/tutoriels/?p=5764' /><link
+rel="alternate" type="application/json+oembed" href="https://www.hostinger.fr/tutoriels/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hostinger.fr%2Ftutoriels%2Fcreer-un-widget-wordpress%2F" /><link
+rel="alternate" type="text/xml+oembed" href="https://www.hostinger.fr/tutoriels/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hostinger.fr%2Ftutoriels%2Fcreer-un-widget-wordpress%2F&#038;format=xml" />
+ <script>(function(m,a,i,l,e,r){m['MailerLiteObject']=e;function f(){
+        var c={a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+        f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+        var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?'+(~~(new Date().getTime()/10000000));
+        _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '746494', 'j1s0p2r1a8', 'load');</script> 
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL4FQVG');</script>  <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '301499733514427', {
+em: 'insert_email_variable,'
+});
+fbq('track', 'PageView');</script><style id="ctcc-css" type="text/css" media="screen">#catapult-cookie-bar {
+					box-sizing: border-box;
+					max-height: 0;
+					opacity: 0;
+					z-index: 99999;
+					overflow: hidden;
+					color: #0c0c0c;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					background-color: #ffffff;
+				}
+				#catapult-cookie-bar a {
+					color: #913fe2;
+				}
+				#catapult-cookie-bar .x_close span {
+					background-color: ;
+				}
+				button#catapultCookie {
+					background:;
+					color: ;
+					border: 0; padding: 6px 9px; border-radius: 3px;
+				}
+				#catapult-cookie-bar h3 {
+					color: #0c0c0c;
+				}
+				.has-cookie-bar #catapult-cookie-bar {
+					opacity: 1;
+					max-height: 999px;
+					min-height: 30px;
+				}</style> <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/"
+    },
+    "headline": "Créer un widget WordPress facilement et simplement",
+    "datePublished": "2017-09-19T09:29:31+0000",
+    "dateModified": "2017-09-19T09:29:31+0000",
+    "author": {
+        "@type": "Person",
+        "name": "Brice Basty"
+    },
+    "description": "IntroductionSaviez-vous que vous pouvez créer un widget WordPress facilement et le personnaliser ? Bien qu'il ",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg",
+        "width": 900,
+        "height": 560
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hostinger Tutoriels",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/hostinger-logo-fr.png",
+            "width": 450,
+            "height": 56
+        }
+    }
+}</script> <link
+href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <script type="text/javascript">var essb_settings = {"ajax_url":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","essb3_nonce":"d5f87e8d53","essb3_plugin_url":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/plugins\/easy-social-share-buttons3","essb3_facebook_total":true,"essb3_admin_ajax":false,"essb3_internal_counter":false,"essb3_stats":false,"essb3_ga":false,"essb3_ga_mode":"simple","essb3_counter_button_min":10,"essb3_counter_total_min":10,"blog_url":"https:\/\/www.hostinger.fr\/tutoriels\/","ajax_type":"wp","essb3_postfloat_stay":false,"essb3_no_counter_mailprint":false,"essb3_single_ajax":false,"twitter_counter":"self","post_id":5764,"postfloat_top":"60"};</script> <style type="text/css">@font-face {
+                font-family: 'aslsicons2';
+                src: url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot');
+                src: url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.eot?#iefix') format('embedded-opentype'),
+                     url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff2') format('woff2'),
+                     url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.woff') format('woff'),
+                     url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.ttf') format('truetype'),
+                     url('https://www.hostinger.fr/tutoriels/wp-content/plugins/ajax-search-lite/css/fonts/icons2.svg#icons') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+                font-size: 0px !important;
+                color: rgba(0, 0, 0, 0);
+            }
+            div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+                font-size: 11px !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            div[id*='ajaxsearchlite'].wpdreams_asl_container {
+                width: 100%;
+                margin: 0px 0px 0px 0px;
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+                font-weight: bold;
+                color: rgba(217, 49, 43, 1);
+                background-color: rgba(238, 238, 238, 1);
+            }
+            div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+                width: 70px;
+                height: 70px;
+            }
+            div.asl_r .results {
+                max-height: auto;
+            }</style> <script type="text/javascript">if ( typeof _ASL !== "undefined" && _ASL !== null && typeof _ASL.initialize !== "undefined" )
+                    _ASL.initialize();</script> <link
+rel="icon" href="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/08/cropped-cropped-hostinger-fav-32x32.png" sizes="32x32" /><link
+rel="icon" href="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/08/cropped-cropped-hostinger-fav-192x192.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/08/cropped-cropped-hostinger-fav-180x180.png" /><meta
+name="msapplication-TileImage" content="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/08/cropped-cropped-hostinger-fav-270x270.png" /><style type="text/css">ul#menu-hostinger-call-to-action-menu li { margin: 0; max-width: 140px; text-align: center; } ul#menu-hostinger-call-to-action-menu>li>a { padding: 5px 5px; } ul#menu-hostinger-call-to-action-menu li:last-child a { border: 2px solid #fff; border-radius: 5px; padding: 5px 5px; } .herald-header-sticky { height: 65px; } div#sticky-header .site-branding.mini { margin-top: 4px; } .herald-header-sticky ul li { margin: 0; max-width: 145px; text-align: center; } .herald-header-sticky ul>li>a { padding: 5px 5px!important; margin-top: 10px; } .herald-header-sticky ul li:last-child a { border: 2px solid #fff; border-radius: 5px; padding: 5px 5px; } .search-tutorials { max-width: 650px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px; } .search-block-headder { background-color: #5335af; } .cookie-consent { position: fixed!important; bottom: 0; left: 0; right: 0; padding: 2px 85px 0 20px; background: #fff; border-top: 1px solid #aaa; z-index: 99; font-size: 12px; color: #4a4a4a; }</style></head><body
+class="post-template-default single single-post postid-5764 single-format-standard chrome"><header
+id="header" class="herald-site-header"><div
+class="header-top hidden-xs hidden-sm"><div
+class="container"><div
+class="row"><div
+class="col-lg-12"><div
+class="hel-r">
+<nav
+class="secondary-navigation herald-menu"><ul
+id="menu-top-menu" class="menu"><li
+id="menu-item-4997" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4997"><a href="https://www.hostinger.fr/tutoriels/" data-wpel-link="internal"><i
+class="fa fa-graduation-cap" aria-hidden="true"></i> Tutoriels</a></li><li
+id="menu-item-4998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4998"><a href="https://www.hostinger.fr/affiliation" data-wpel-link="internal"><i
+class="fa fa-trophy" aria-hidden="true"></i> Gagnez de l&#8217;argent</a></li><li
+id="menu-item-4999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4999"><a href="https://www.hostinger.fr/affilie/login" data-wpel-link="internal"><i
+class="fa fa-user" aria-hidden="true"></i> Affiliés</a></li><li
+id="menu-item-5669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5669"><a href="https://www.hostinger.fr/cpanel-login" data-wpel-link="internal"><i
+class="fa fa-lock" aria-hidden="true"></i>  Connexion</a></li></ul></nav></div></div></div></div></div><div
+class="header-middle herald-header-wraper hidden-xs hidden-sm"><div
+class="container"><div
+class="row"><div
+class="col-lg-12 hel-el"><div
+class="hel-l herald-go-hor"><div
+class="site-branding">
+<span
+class="site-title h1"><a href="https://www.hostinger.fr" rel="home" data-wpel-link="internal"><img
+class="herald-logo" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/hostinger-logo-fr.png" alt="Hostinger Tutoriels" ></a></span></div></div><div
+class="hel-r herald-go-hor">
+<nav
+class="secondary-navigation herald-menu"><ul
+id="menu-hostinger-fr-cta-menu" class="menu"><li
+id="menu-item-3193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3193"><a href="https://www.hostinger.fr/hebergeur-web" data-wpel-link="internal">HÉBERGEMENT WEB PAS CHER</a></li><li
+id="menu-item-3194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3194"><a href="https://www.hostinger.fr/vps-pas-cher" data-wpel-link="internal">HÉBERGEMENT VPS</a></li><li
+id="menu-item-3195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3195"><a href="https://www.hostinger.fr/nom-de-domaine-disponible" data-wpel-link="internal">DOMAINE PAS CHER</a></li><li
+id="menu-item-3196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3196"><a href="https://www.hostinger.fr/creer-un-site-internet" data-wpel-link="internal">CREER UN SITE</a></li><li
+id="menu-item-3197" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3197"><a id="hgr-tutorials-header-button-free_trial" href="https://www.hostinger.fr/hebergement-site-web" data-wpel-link="internal">ESSAYEZ NOUS  <i
+class="fa fa-chevron-right" aria-hidden="true" style="font-size:13px;"></i></a></li></ul></nav></div></div></div></div></div><div
+class="header-bottom herald-header-wraper hidden-sm hidden-xs"><div
+class="container"><div
+class="row"><div
+class="col-lg-12 hel-el"><div
+class="hel-c">
+<nav
+class="secondary-navigation herald-menu"><ul
+id="menu-category-menu" class="menu"><li
+id="menu-item-5649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5649"><a title="Accueil" href="http://hostinger.fr/tutoriels" data-wpel-link="internal"><i
+class="fa fa-home" aria-hidden="true" style="font-size:18px;"></i></a></li><li
+id="menu-item-4976" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4976"><a href="https://www.hostinger.fr/tutoriels/wordpress/" data-wpel-link="internal">WordPress</a></li><li
+id="menu-item-4975" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4975"><a href="https://www.hostinger.fr/tutoriels/site-web/" data-wpel-link="internal">Site Web</a></li><li
+id="menu-item-4977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4977"><a href="https://www.hostinger.fr/tutoriels/mail/" data-wpel-link="internal">Mail</a></li><li
+id="menu-item-4978" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4978"><a href="https://www.hostinger.fr/tutoriels/vps/" data-wpel-link="internal">VPS</a></li><li
+id="menu-item-4979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4979"><a href="https://www.hostinger.fr/tutoriels/dns/" data-wpel-link="internal">DNS</a></li><li
+id="menu-item-4980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4980"><a href="https://www.hostinger.fr/tutoriels/ftp/" data-wpel-link="internal">FTP</a></li><li
+id="menu-item-4981" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4981"><a href="https://www.hostinger.fr/tutoriels/linux/" data-wpel-link="internal">SSH &#038; Linux</a></li></ul></nav></div><div
+class="hel-r"></div></div></div></div></div><div
+class="search-block-headder"><div
+class="search-tutorials"><div
+id='ajaxsearchlite1' class="wpdreams_asl_container asl_w asl_m asl_m_1"><div
+class="probox"><div
+class='promagnifier'><div
+class='innericon'>
+<svg
+version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path
+id="magnifier-2-icon" d="M460.355,421.59L353.844,315.078c20.041-27.553,31.885-61.437,31.885-98.037
+C385.729,124.934,310.793,50,218.686,50C126.58,50,51.645,124.934,51.645,217.041c0,92.106,74.936,167.041,167.041,167.041
+c34.912,0,67.352-10.773,94.184-29.158L419.945,462L460.355,421.59z M100.631,217.041c0-65.096,52.959-118.056,118.055-118.056
+c65.098,0,118.057,52.959,118.057,118.056c0,65.096-52.959,118.056-118.057,118.056C153.59,335.097,100.631,282.137,100.631,217.041
+z"/>
+</svg></div></div><div
+class='prosettings'  data-opened=0><div
+class='innericon'>
+<svg
+version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<polygon
+id="arrow-25-icon" transform = "rotate(90 256 256)" points="142.332,104.886 197.48,50 402.5,256 197.48,462 142.332,407.113 292.727,256 "/>
+</svg></div></div><div
+class='proinput'><form
+autocomplete="off" aria-label='Ajax search form'>
+<input
+aria-label='Search input' type='search' class='orig' name='phrase' placeholder='Rechercher...' value='' autocomplete="off"/>
+<input
+aria-label='Autocomplete input, do not use this' type='text' class='autocomplete' name='phrase' value='' autocomplete="off"/>
+<span
+class='loading'></span>
+<input
+type='submit' value="Start search" style='width:0; height: 0; visibility: hidden;'></form></div><div
+class='proloading'><div
+class="asl_loader"><div
+class="asl_loader-inner asl_simple-circle"></div></div></div><div
+class='proclose'>
+<svg
+version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+y="0px"
+width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
+xml:space="preserve">
+<polygon
+id="x-mark-icon"
+points="438.393,374.595 319.757,255.977 438.378,137.348 374.595,73.607 255.995,192.225 137.375,73.622 73.607,137.352 192.246,255.983 73.622,374.625 137.352,438.393 256.002,319.734 374.652,438.378 "/>
+</svg></div></div></div><div
+id='ajaxsearchlitesettings1' class="searchsettings wpdreams_asl_settings asl_w asl_s asl_s_1"><form
+name='options' autocomplete='off'><fieldset
+class="asl_sett_scroll"><legend
+style="display: none;">Generic selectors</legend><div
+class="asl_option_inner hiddend">
+<input
+type='hidden' name='qtranslate_lang' id='qtranslate_lang'
+value='0'/></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="checked" id="set_exactonly1"
+title="Exact matches only"
+name="set_exactonly" />
+<label
+for="set_exactonly1">Exact matches only</label></div><div
+class="asl_option_label">
+Exact matches only</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="None" id="set_intitle1"
+title="Search in title"
+name="set_intitle"  checked="checked"/>
+<label
+for="set_intitle1">Search in title</label></div><div
+class="asl_option_label">
+Search in title</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="None" id="set_incontent1"
+title="Search in content"
+name="set_incontent"  checked="checked"/>
+<label
+for="set_incontent1">Search in content</label></div><div
+class="asl_option_label">
+Search in content</div></div><div
+class="asl_option_inner hiddend">
+<input
+type="checkbox" value="None" id="set_inexcerpt1"
+title="Search in excerpt"
+name="set_inexcerpt"  checked="checked"/>
+<label
+for="set_inexcerpt1">Search in excerpt</label></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="None" id="set_inposts1"
+title="Search in posts"
+name="set_inposts"  checked="checked"/>
+<label
+for="set_inposts1">Search in posts</label></div><div
+class="asl_option_label">
+Search in posts</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="None" id="set_inpages1"
+title="Search in pages"
+name="set_inpages" />
+<label
+for="set_inpages1">Search in pages</label></div><div
+class="asl_option_label">
+Search in pages</div></div></fieldset><fieldset><legend>Filter by Categories</legend><div
+class='categoryfilter asl_sett_scroll'><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4811"
+id="1categoryset_4811"
+title=" htaccess"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4811"> htaccess</label></div><div
+class="asl_option_label">
+.htaccess</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4806"
+id="1categoryset_4806"
+title="Autres"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4806">Autres</label></div><div
+class="asl_option_label">
+Autres</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4761"
+id="1categoryset_4761"
+title="DNS"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4761">DNS</label></div><div
+class="asl_option_label">
+DNS</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="5261"
+id="1categoryset_5261"
+title="Drupal"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_5261">Drupal</label></div><div
+class="asl_option_label">
+Drupal</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4805"
+id="1categoryset_4805"
+title="FTP"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4805">FTP</label></div><div
+class="asl_option_label">
+FTP</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4808"
+id="1categoryset_4808"
+title="GIT"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4808">GIT</label></div><div
+class="asl_option_label">
+GIT</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="5259"
+id="1categoryset_5259"
+title="Glossaire"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_5259">Glossaire</label></div><div
+class="asl_option_label">
+Glossaire</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4807"
+id="1categoryset_4807"
+title="HTML  amp  CSS"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4807">HTML  amp  CSS</label></div><div
+class="asl_option_label">
+HTML &amp; CSS</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4781"
+id="1categoryset_4781"
+title="Mail"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4781">Mail</label></div><div
+class="asl_option_label">
+Mail</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="5064"
+id="1categoryset_5064"
+title="Panel"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_5064">Panel</label></div><div
+class="asl_option_label">
+Panel</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4809"
+id="1categoryset_4809"
+title="PHP"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4809">PHP</label></div><div
+class="asl_option_label">
+PHP</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4810"
+id="1categoryset_4810"
+title="phpBB"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4810">phpBB</label></div><div
+class="asl_option_label">
+phpBB</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4804"
+id="1categoryset_4804"
+title="Site Web"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4804">Site Web</label></div><div
+class="asl_option_label">
+Site Web</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4792"
+id="1categoryset_4792"
+title="SSH  amp  Linux"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4792">SSH  amp  Linux</label></div><div
+class="asl_option_label">
+SSH &amp; Linux</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="5273"
+id="1categoryset_5273"
+title="SSL"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_5273">SSL</label></div><div
+class="asl_option_label">
+SSL</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4760"
+id="1categoryset_4760"
+title="VPS"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4760">VPS</label></div><div
+class="asl_option_label">
+VPS</div></div><div
+class="asl_option"><div
+class="asl_option_inner">
+<input
+type="checkbox" value="4777"
+id="1categoryset_4777"
+title="WordPress"
+name="categoryset[]" checked="checked"/>
+<label
+for="1categoryset_4777">WordPress</label></div><div
+class="asl_option_label">
+WordPress</div></div></div></fieldset></form></div><div
+id='ajaxsearchliteres1' class='vertical wpdreams_asl_results asl_w asl_r asl_r_1'><div
+class="results"><div
+class="resdrg"></div></div></div><div
+id="asl_hidden_data">
+<svg
+style="position:absolute" height="0" width="0">
+<filter
+id="aslblur">
+<feGaussianBlur
+in="SourceGraphic" stdDeviation="4"/>
+</filter>
+</svg>
+<svg
+style="position:absolute" height="0" width="0">
+<filter
+id="no_aslblur"></filter>
+</svg></div><div
+class="asl_init_data wpdreams_asl_data_ct" style="display:none !important;" id="asl_init_id_1" data-asldata="ew0KICAgICJob21ldXJsIjogImh0dHBzOi8vd3d3Lmhvc3Rpbmdlci5mci90dXRvcmllbHMvIiwNCiAgICAicmVzdWx0c3R5cGUiOiAidmVydGljYWwiLA0KICAgICJyZXN1bHRzcG9zaXRpb24iOiAiaG92ZXIiLA0KICAgICJpdGVtc2NvdW50IjogNCwNCiAgICAiaW1hZ2V3aWR0aCI6IDcwLA0KICAgICJpbWFnZWhlaWdodCI6IDcwLA0KICAgICJyZXN1bHRpdGVtaGVpZ2h0IjogIjcwcHgiLA0KICAgICJzaG93YXV0aG9yIjogMCwNCiAgICAic2hvd2RhdGUiOiAwLA0KICAgICJzaG93ZGVzY3JpcHRpb24iOiAwLA0KICAgICJjaGFyY291bnQiOiAgMCwNCiAgICAiZGVmYXVsdEltYWdlIjogImh0dHA6Ly9ibG9nLmhvc3Rpbmdlci5pby9ob3N0aW5nZXItdHV0b3JpYWxzL3dwLWNvbnRlbnQvcGx1Z2lucy9hamF4LXNlYXJjaC1saXRlL2ltZy9kZWZhdWx0LmpwZyIsDQogICAgImhpZ2hsaWdodCI6IDAsDQogICAgImhpZ2hsaWdodHdob2xld29yZHMiOiAxLA0KICAgICJzY3JvbGxUb1Jlc3VsdHMiOiAwLA0KICAgICJyZXN1bHRhcmVhY2xpY2thYmxlIjogMSwNCiAgICAiYXV0b2NvbXBsZXRlIjogew0KICAgICAgICAiZW5hYmxlZCIgOiAwLA0KICAgICAgICAibGFuZyIgOiAiZW4iDQogICAgfSwNCiAgICAidHJpZ2dlcm9udHlwZSI6IDEsDQogICAgInRyaWdnZXJfb25fY2xpY2siOiAwLA0KICAgICJ0cmlnZ2VyX29uX2ZhY2V0X2NoYW5nZSI6IDEsDQogICAgInNldHRpbmdzaW1hZ2Vwb3MiOiAicmlnaHQiLA0KICAgICJocmVzdWx0YW5pbWF0aW9uIjogImZ4LW5vbmUiLA0KICAgICJ2cmVzdWx0YW5pbWF0aW9uIjogImZ4LW5vbmUiLA0KICAgICJocmVzdWx0aGlkZWRlc2MiOiAiMSIsDQogICAgInByZXNjb250YWluZXJoZWlnaHQiOiAiNDAwcHgiLA0KICAgICJwc2hvd3N1YnRpdGxlIjogIjAiLA0KICAgICJwc2hvd2Rlc2MiOiAiMSIsDQogICAgImNsb3NlT25Eb2NDbGljayI6IDEsDQogICAgImlpZk5vSW1hZ2UiOiAiZGVzY3JpcHRpb24iLA0KICAgICJpaVJvd3MiOiAyLA0KICAgICJpaXRlbXNXaWR0aCI6IDIwMCwNCiAgICAiaWl0ZW1zSGVpZ2h0IjogMjAwLA0KICAgICJpaXNob3dPdmVybGF5IjogMSwNCiAgICAiaWlibHVyT3ZlcmxheSI6IDEsDQogICAgImlpaGlkZUNvbnRlbnQiOiAxLA0KICAgICJpaWFuaW1hdGlvbiI6ICIxIiwNCiAgICAiYW5hbHl0aWNzIjogMCwNCiAgICAiYW5hbHl0aWNzU3RyaW5nIjogIiIsDQogICAgInJlZGlyZWN0b25jbGljayI6IDEsDQogICAgInJlZGlyZWN0Q2xpY2tUbyI6ICJyZXN1bHRzX3BhZ2UiLA0KICAgICJyZWRpcmVjdENsaWNrTG9jIjogInNhbWUiLA0KICAgICJyZWRpcmVjdF9vbl9lbnRlciI6IDEsDQogICAgInJlZGlyZWN0RW50ZXJUbyI6ICJyZXN1bHRzX3BhZ2UiLA0KICAgICJyZWRpcmVjdEVudGVyTG9jIjogInNhbWUiLA0KICAgICJyZWRpcmVjdF91cmwiOiAiP3M9e3BocmFzZX0iLA0KICAgICJvdmVycmlkZXdwZGVmYXVsdCI6IDEsDQogICAgIm92ZXJyaWRlX21ldGhvZCI6ICJwb3N0Ig0KfQ0K"></div></div></div>
+</header><div
+id="sticky-header" class="herald-header-sticky herald-header-wraper herald-slide hidden-xs hidden-sm"><div
+class="container"><div
+class="row"><div
+class="col-lg-12 hel-el"><div
+class="hel-l herald-go-hor"><div
+class="site-branding mini">
+<span
+class="site-title h1"><a href="https://www.hostinger.fr" rel="home" data-wpel-link="internal"><img
+class="herald-logo-mini" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/mini-logo-fr.png" alt="Hostinger Tutoriels" ></a></span></div></div><div
+class="hel-r herald-go-hor">
+<nav
+class="secondary-navigation herald-menu"><ul
+id="menu-hostinger-fr-cta-menu-1" class="menu"><li
+class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3193"><a href="https://www.hostinger.fr/hebergeur-web" data-wpel-link="internal">HÉBERGEMENT WEB PAS CHER</a></li><li
+class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3194"><a href="https://www.hostinger.fr/vps-pas-cher" data-wpel-link="internal">HÉBERGEMENT VPS</a></li><li
+class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3195"><a href="https://www.hostinger.fr/nom-de-domaine-disponible" data-wpel-link="internal">DOMAINE PAS CHER</a></li><li
+class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3196"><a href="https://www.hostinger.fr/creer-un-site-internet" data-wpel-link="internal">CREER UN SITE</a></li><li
+class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3197"><a id="hgr-tutorials-header-button-free_trial" href="https://www.hostinger.fr/hebergement-site-web" data-wpel-link="internal">ESSAYEZ NOUS  <i
+class="fa fa-chevron-right" aria-hidden="true" style="font-size:13px;"></i></a></li></ul></nav></div></div></div></div></div><div
+id="herald-responsive-header" class="herald-responsive-header herald-slide hidden-lg hidden-md"><div
+class="container"><div
+class="herald-nav-toggle"><i
+class="fa fa-bars"></i></div><div
+class="site-branding mini">
+<span
+class="site-title h1"><a href="https://www.hostinger.fr" rel="home" data-wpel-link="internal"><img
+class="herald-logo-mini" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/mini-logo-fr.png" alt="Hostinger Tutoriels" ></a></span></div><div
+class="herald-menu-popup-search">
+<span
+class="fa fa-search"></span><div
+class="herald-in-popup"><form
+class="herald-search-form" action="https://www.hostinger.fr/tutoriels/" method="get">
+<input
+name="s" class="herald-search-input" type="text" value="" placeholder="Tapez ici pour chercher..." /><button
+type="submit" class="herald-search-submit"></button></form></div></div></div></div><div
+class="herald-mobile-nav herald-slide hidden-lg hidden-md"><ul
+id="menu-main-menu" class="herald-mob-nav"><li
+id="menu-item-5112" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5112"><a href="https://www.hostinger.fr/tutoriels/wordpress/" data-wpel-link="internal">WordPress</a></li><li
+id="menu-item-5113" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5113"><a href="https://www.hostinger.fr/tutoriels/site-web/" data-wpel-link="internal">Site Web</a></li><li
+id="menu-item-5114" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5114"><a href="https://www.hostinger.fr/tutoriels/linux/" data-wpel-link="internal">SSH &#038; Linux</a></li><li
+id="menu-item-5115" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5115"><a href="https://www.hostinger.fr/tutoriels/vps/" data-wpel-link="internal">VPS</a></li><li
+id="menu-item-5116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5116"><a href="https://www.hostinger.fr/tutoriels/mail/" data-wpel-link="internal">Mail</a></li><li
+id="menu-item-5117" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5117"><a href="https://www.hostinger.fr/tutoriels/dns/" data-wpel-link="internal">DNS</a></li><li
+id="menu-item-5118" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5118"><a href="https://www.hostinger.fr/tutoriels/ftp/" data-wpel-link="internal">FTP</a></li><li
+id="menu-item-5119" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5119"><a href="https://www.hostinger.fr/tutoriels/autres/" data-wpel-link="internal">Autres</a></li><li
+id="menu-item-5120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5120"><a href="https://www.hostinger.fr/tutoriels/html-css/" data-wpel-link="internal">HTML &#038; CSS</a></li><li
+id="menu-item-5121" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5121"><a href="https://www.hostinger.fr/tutoriels/git/" data-wpel-link="internal">GIT</a></li><li
+id="menu-item-3220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3220"><a href="https://www.hostinger.fr/hebergement-web" data-wpel-link="internal">HÉBERGEMENT WEB ABORDABLE</a></li><li
+id="menu-item-3221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3221"><a href="https://www.hostinger.fr/hebergement-web" data-wpel-link="internal">ESSAYEZ SANS RISQUE</a></li></ul></div><div
+id="content" class="herald-site-content herald-slide"><div
+class="herald-section container "><article
+id="post-5764" class="herald-single post-5764 post type-post status-publish format-standard has-post-thumbnail category-php category-wordpress tag-creer-un-widget tag-creer-un-widget-wordpress tag-widgets-wordpress"><div
+class="row"><div
+class="col-lg-9 col-md-9 col-mod-single col-mod-main"><div
+class="row"><div
+class="col-lg-2 col-md-2 col-sm-2 hidden-xs herald-left"><div
+class="entry-meta-wrapper "></div></div><div
+class="col-lg-10 col-md-10 col-sm-10">
+<header
+class="entry-header">
+<span
+class="meta-category"><a href="https://www.hostinger.fr/tutoriels/php/" class="herald-cat-4809" data-wpel-link="internal">PHP</a> <span>&bull;</span> <a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h1 class="entry-title h1">Créer un widget WordPress facilement et simplement</h1><div
+class="entry-meta entry-meta-single"><div
+class="meta-item herald-date"><span
+class="updated">septembre 19th, 2017</span></div><div
+class="meta-item herald-author"><span
+class="vcard author"><span
+class="fn"><a href="https://www.hostinger.fr/tutoriels/author/bricebasty/" data-wpel-link="internal">Brice Basty</a></span></span></div><div
+class="meta-item herald-rtime">8 Min de lecture</div></div>
+</header><div
+class="herald-post-thumbnail herald-post-thumbnail-single">
+<span><img
+width="900" height="560" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg" class="attachment-herald-lay-single size-herald-lay-single wp-post-image" alt="creer un widget wordpress" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress.jpg 900w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress-150x93.jpg 150w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress-300x187.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/creer-un-widget-wordpress-768x478.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></span></div><div
+class="entry-content herald-entry-content"><div
+class="essb_links essb_counters essb_displayed_postfloat essb_share essb_template_metro-retina essb_954645667 essb_width_flex essb_links_center print-no" id="essb_displayed_postfloat_954645667" data-essb-postid="5764" data-essb-position="postfloat" data-essb-button-style="vertical" data-essb-template="metro-retina" data-essb-counter-pos="hidden" data-essb-url="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" data-essb-twitter-url="https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" data-essb-instance="954645667"><ul
+class="essb_links_list essb_vertical_name"><li
+class="essb_item essb_totalcount_item" style="display: none !important;" data-essb-hide-till="10" data-counter-pos="hidden"><span
+class="essb_totalcount essb_t_l_big " title="" data-shares-text="shares"><span
+class="essb_t_nb">0<span
+class="essb_t_nb_after">shares</span></span></span></li><li
+class="essb_item essb_link_facebook nolightbox"> <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&#038;t=%%title%%&#038;redirect_uri=https://www.hostinger.fr/tutoriels?sharing-thankyou=yes" title="" onclick="essb_window(&#039;https://www.facebook.com/sharer/sharer.php?u=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&#038;t=%%title%%&#038;redirect_uri=https://www.hostinger.fr/tutoriels?sharing-thankyou=yes&#039;,&#039;facebook&#039;,&#039;954645667&#039;); return false;" target="_blank" rel="nofollow" data-wpel-link="internal"><span
+class="essb_icon essb_icon_facebook"></span><span
+class="essb_network_name">Share</span></a><span
+class="essb_counter_hidden" data-cnt="" style="display: none;" data-cnt-short=""></span></li><li
+class="essb_item essb_link_twitter nolightbox"> <a href="#" title="" onclick="essb_window(&#039;https://twitter.com/intent/tweet?text=%%title%%&amp;url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&amp;counturl=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&#039;,&#039;twitter&#039;,&#039;954645667&#039;); return false;" target="_blank" rel="nofollow" data-wpel-link="internal"><span
+class="essb_icon essb_icon_twitter"></span><span
+class="essb_network_name">Tweet</span></a><span
+class="essb_counter_hidden" data-cnt="" style="display: none;" data-cnt-short=""></span></li><li
+class="essb_item essb_link_google nolightbox"> <a href="https://plus.google.com/share?url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" title="" onclick="essb_window(&#039;https://plus.google.com/share?url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&#039;,&#039;google&#039;,&#039;954645667&#039;); return false;" target="_blank" rel="nofollow" data-wpel-link="internal"><span
+class="essb_icon essb_icon_google"></span><span
+class="essb_network_name">+1</span></a><span
+class="essb_counter_hidden" data-cnt="" style="display: none;" data-cnt-short=""></span></li><li
+class="essb_item essb_link_reddit nolightbox"> <a href="http://reddit.com/submit?url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&amp;title=%%title%%" title="" onclick="essb_window(&#039;http://reddit.com/submit?url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&amp;title=%%title%%&#039;,&#039;reddit&#039;,&#039;954645667&#039;); return false;" target="_blank" rel="nofollow" data-wpel-link="internal"><span
+class="essb_icon essb_icon_reddit"></span><span
+class="essb_network_name">Reddit</span></a><span
+class="essb_counter_hidden" data-cnt="" style="display: none;" data-cnt-short=""></span></li><li
+class="essb_item essb_link_linkedin nolightbox"> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=%%title%%&amp;url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/" title="" onclick="essb_window(&#039;http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;trk=EasySocialShareButtons&amp;title=%%title%%&amp;url=https://www.hostinger.fr/tutoriels/creer-un-widget-wordpress/&#039;,&#039;linkedin&#039;,&#039;954645667&#039;); return false;" target="_blank" rel="nofollow" data-wpel-link="internal"><span
+class="essb_icon essb_icon_linkedin"></span><span
+class="essb_network_name">Share</span></a><span
+class="essb_counter_hidden" data-cnt="" style="display: none;" data-cnt-short=""></span></li></ul></div><h2>Introduction</h2><p>Saviez-vous que vous pouvez créer un widget WordPress facilement et le personnaliser ? Bien qu&#8217;il existe des tonnes de widgets supplémentaires qui contiennent des thèmes et des plugins, WordPress donne également la possibilité de coder des widgets personnalisés manuellement pour tous les utilisateurs. Dans ce <a href="https://www.hostinger.fr/tutoriels/wordpress" data-wpel-link="internal">tutoriel WordPress</a>, vous apprendrez comment implémenter un widget basique dans WordPress. Si cela semble vous intimidant, rassurez-vous, les seuls éléments dont vous aurez besoin sont des connaissances de base sur WordPress et PHP. Donc, sans plus tarder, commençons.</p><div
+id="toc_container" class="toc_wrap_left toc_white no_bullets"><p
+class="toc_title">Sommaire</p><ul
+class="toc_list"><li><a href="#Ce-dont-vous-aurez-besoin" data-wpel-link="internal">Ce dont vous aurez besoin</a></li><li><a href="#Un-mot-sur-les-widgets-WordPress" data-wpel-link="internal">Un mot sur les widgets WordPress</a></li><li><a href="#Bien-commencer" data-wpel-link="internal">Bien commencer</a></li><li><a href="#Fonctionnement-des-widgets-personnalises-de-WordPress-Widgets-API" data-wpel-link="internal">Fonctionnement des widgets personnalisés de WordPress: Widgets API</a></li><li><a href="#Creer-un-widget-WordPress-personnalise" data-wpel-link="internal">Créer un widget WordPress personnalisé</a></li><li><a href="#Conclusion" data-wpel-link="internal">Conclusion</a></li></ul></div><h2><span
+id="Ce-dont-vous-aurez-besoin"><span
+id="What-you8217ll-need">Ce dont vous aurez besoin</span></span></h2><p>Avant de commencer ce tutoriel, vous aurez besoin de ce qui suit:</p><ul><li>Accès au tableau de bord de l&#8217;administration WordPress</li><li>N&#8217;importe quel éditeur de texte</li></ul><h2><span
+id="Un-mot-sur-les-widgets-WordPress"><span
+id="A-Word-on-WordPress-Widgets">Un mot sur les widgets WordPress</span></span></h2><p>Les widgets dans WordPress sont destinés à faciliter l&#8217;ajout d&#8217;éléments sur votre site via une simple interface de glisser-déposer. À la pointe de la technologie, WordPress est livré avec plusieurs widgets. Ces widgets par défaut vous donnent un utilitaire de base et sont compatibles avec chaque thème de WordPress. Mais parfois, ces widgets ne suffisent pas. Dans de tels cas, la meilleure option est de créer les plugins qui vous offrent la fonctionnalité que vous désirez. Vous pouvez trouver des plugins pour la plupart des tâches typiques, mais il existe des scénarios où même les plugins tiers ne répondent pas à vos besoins. C&#8217;est là que les widgets personnalisés sont utiles. Des widgets personnalisés doivent être créés à partir de rien. Cela donne aux utilisateurs un contrôle complet sur leur utilisation de WordPress.</p><h2><span
+id="Bien-commencer"><span
+id="Setting-the-stage">Bien commencer</span></span></h2><p>Pour commencer à créer un widget WordPress, vous devez prendre certaines décisions clés. Tout d&#8217;abord, vous pouvez choisir de coder le widget dans un plugin personnalisé. Cela lui permettra de fonctionner avec n&#8217;importe quel site utilisant ce plugin. Ou, vous pouvez simplement ajouter le widget au fichier <strong>functions.php</strong> d&#8217;un thème spécifique, ce qui le fera fonctionner avec ce seul thème. Deuxièmement, vous avez la possibilité d&#8217;ajouter le widget sur un site en ligne ou dans un environnement local. Conformément aux pratiques de développement, nous vous recommandons fortement de créer le widget dans un environnement local (voir le didacticiel sur l&#8217;<a href="https://www.hostinger.fr/tutoriels/docker-wordpress/" data-wpel-link="internal">exécution de WordPress sur Docker</a>). Une fois que vous vous êtes assuré que cela fonctionne bien, vous pourrez facilement le <a href="https://www.hostinger.com/tutorials/wordpress/how-to-migrate-wordpress-from-localhost-to-server" data-wpel-link="internal">transférer sur votre site (en anglais)</a>.</p><h2><span
+id="Fonctionnement-des-widgets-personnalises-de-WordPress-Widgets-API"><span
+id="How-do-WordPress-custom-widgets-work-Widgets-API">Fonctionnement des widgets personnalisés de WordPress: Widgets API</span></span></h2><p>WordPress permet à vos codes de personnaliser les widgets en vous fournissant l&#8217;<a href="https://codex.wordpress.org/Widgets_API" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">API Widgets</a> (en anglais). Pour créer un widget personnalisé, vous devez utiliser la classe <a href="https://developer.wordpress.org/reference/classes/wp_widget/" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">WP_Widget</a> (en anglais) de l&#8217;API. Cette classe de base offre environ 20 fonctions avec lesquelles vous pouvez jouer. En dehors de cela, seules 4 sont nécessaires pour qu&#8217;un widget fonctionne. Ces 4 fonctions sont:</p><ul><li><strong>__construct()</strong> &#8211; fonction constructeur</li><li><strong>widget()</strong> &#8211; contient la sortie du widget</li><li><strong>form()</strong> &#8211; détermine les paramètres du widget dans le tableau de bord WordPress</li><li><strong>update()</strong> &#8211; met à jour les paramètres du plugin</li></ul><p>Bien sûr, il existe de nombreuses autres méthodes qui offrent des fonctionnalités supplémentaires. Pour en savoir plus sur la classe <strong>WP_Widget</strong> , regardez <a href="https://developer.wordpress.org/reference/classes/wp_widget/" target="_blank" rel="noopener nofollow external noreferrer" data-wpel-link="external">cette page</a> (en anglais).</p><h2><span
+id="Creer-un-widget-WordPress-personnalise"><span
+id="Creating-WordPress-custom-widget">Créer un widget WordPress personnalisé</span></span></h2><blockquote><p><strong>IMPORTANT:</strong> Il est fortement recommandé de créer une <a href="https://www.hostinger.fr/tutoriels/sauvegarder-site/" data-wpel-link="internal"><strong>sauvegarde</strong> <strong>complète de votre site </strong></a>avant d&#8217;aller plus loin. En outre, vous devriez également <strong><a href="https://www.hostinger.fr/tutoriels/theme-enfant-wordpress/" data-wpel-link="internal">utiliser le thème enfant WordPress</a></strong>.</p></blockquote><p>Maintenant que nous avons défini les bases conceptuelles de notre tâche, nous allons travailler sur sa mise en œuvre. Pour ce tutoriel, nous allons créer un widget WordPress personnalisé appelé <strong>Hello World</strong>, afin que vous puissiez apprendre les bases pour créer un widget WordPress. Bien sûr, vous pouvez ensuite créer des widgets plus complexes par vous-même.</p><p>Encore une chose: nous écrivons ce code dans le fichier <strong>functions.php</strong> du thème actuellement chargé, mais vous pouvez le faire dans n&#8217;importe quel plugin personnalisé.</p><p>Ouvrez maintenant n&#8217;importe quel éditeur de texte dans votre ordinateur et créez une nouvelle classe qui étend la classe <strong>WP_Widget</strong> de base, comme ceci:</p><pre class="lang:default decode:true">class hstngr_widget extends WP_Widget {
+
+//Insert functions here
+
+}</pre><p>Maintenant, nous commençons à implémenter les 4 fonctions mentionnées ci-dessus une par une. Le premier de la liste est la méthode constructor, que nous utiliserons pour déterminer une ID, le nom du widget tel qu&#8217;il apparaît dans l&#8217;interface utilisateur et une description :</p><pre class="lang:default decode:true">function __construct() {
+parent::__construct(
+// widget ID
+'hstngr_widget',
+// widget name
+__('Hostinger Sample Widget', ' hstngr_widget_domain'),
+// widget description
+array( 'description' =&gt; __( 'Hostinger Widget Tutorial', 'hstngr_widget_domain' ), )
+);
+}</pre><p>Ensuite, nous passons à l&#8217;apparence du widget, ou comment le front-end du widget s&#8217;affichera. Cela se fera par la fonction <strong>widget()</strong> :</p><pre class="lang:default decode:true">public function widget( $args, $instance ) {
+$title = apply_filters( 'widget_title', $instance['title'] );
+echo $args['before_widget'];
+//if title is present
+if ( ! empty( $title ) )
+echo $args['before_title'] . $title . $args['after_title'];
+//output
+echo __( 'Hello, World from Hostinger.com', 'hstngr_widget_domain' );
+echo $args['after_widget'];
+}</pre><div
+id="gist49386879" class="gist"><div
+class="gist-file"><div
+class="gist-data"><div
+class="js-gist-file-update-container js-task-list-container file-box"><div
+id="file-widget" class="file"><div
+class="blob-wrapper data type-text">Ici, nous avons configuré la sortie de notre widget afin qu&#8217;il affiche le terme &#8216;Hello World!&#8217;, Et affiche le titre du widget tel que spécifié par l&#8217;utilisateur.</div></div></div></div></div></div><p>Maintenant, nous devons programmer l&#8217;arrière-plan du widget en utilisant la méthode <strong>form()</strong> :</p><pre class="lang:default decode:true">public function form( $instance ) {
+if ( isset( $instance[ 'title' ] ) )
+$title = $instance[ 'title' ];
+else
+$title = __( 'Default Title', 'hstngr_widget_domain' );
+?&gt;
+&lt;p&gt;
+&lt;label for="&lt;?php echo $this-&gt;get_field_id( 'title' ); ?&gt;"&gt;&lt;?php _e( 'Title:' ); ?&gt;&lt;/label&gt;
+&lt;input class="widefat" id="&lt;?php echo $this-&gt;get_field_id( 'title' ); ?&gt;" name="&lt;?php echo $this-&gt;get_field_name( 'title' ); ?&gt;" type="text" value="&lt;?php echo esc_attr( $title ); ?&gt;" /&gt;
+&lt;/p&gt;
+&lt;?php
+}
+</pre><p>Ici, vous pouvez voir comment le widget personnalisé a été configuré. Si l&#8217;utilisateur fournit un titre, ce titre sera inséré dans le formulaire HTML que nous avons créé. Sinon, nous définirons le titre en <strong>Titre par </strong><strong>défaut</strong>. C&#8217;est ainsi que le widget apparaîtra dans la zone d&#8217;administration de WordPress.</p><p>Enfin, nous devons implémenter la fonction de mise à jour pour actualiser le widget chaque fois que les paramètres sont modifiés.</p><pre class="lang:default decode:true">public function update( $new_instance, $old_instance ) {
+$instance = array();
+$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+return $instance;
+}</pre><p>Tout cela fait, prenez le titre actuel de l&#8217;instance nouvellement créée, supprimez toutes les balises HTML/PHP, envoyez le titre à l&#8217;instance et renvoyez-le.</p><p>Il reste encore une chose à faire ici: vous devez utiliser une fonction supplémentaire pour enregistrer le widget avec WordPress:</p><pre class="lang:default decode:true">function hstngr_register_widget() {
+register_widget( 'hstngr_widget' );
+}
+add_action( 'widgets_init', 'hstngr_register_widget' );</pre><p>Notez que les lignes ci-dessus doivent être placées en dehors de la fonction <strong>hstngr_widget</strong> .</p><p>Nous avons défini une nouvelle fonction appelée <strong>hstngr_register_widget()</strong> , qui enregistre notre widget à l&#8217;aide de l&#8217;identifiant du widget, spécifié dans la fonction<strong> __construct()</strong> . Ensuite, nous avons attaché cette fonction en utilisant <strong>widgets_init</strong> , qui charge ce widget dans WordPress à travers la méthode <strong>add_action()</strong> intégrée . Votre code utilisateur final de WordPress personnalisé devrait ressembler à ceci:</p><pre class="lang:default decode:true">function hstngr_register_widget() {
+register_widget( 'hstngr_widget' );
+}
+
+add_action( 'widgets_init', 'hstngr_register_widget' );
+
+class hstngr_widget extends WP_Widget {
+
+function __construct() {
+parent::__construct(
+// widget ID
+'hstngr_widget',
+// widget name
+__('Hostinger Sample Widget', ' hstngr_widget_domain'),
+// widget description
+array( 'description' =&gt; __( 'Hostinger Widget Tutorial', 'hstngr_widget_domain' ), )
+);
+}
+public function widget( $args, $instance ) {
+$title = apply_filters( 'widget_title', $instance['title'] );
+echo $args['before_widget'];
+//if title is present
+if ( ! empty( $title ) )
+echo $args['before_title'] . $title . $args['after_title'];
+//output
+echo __( 'Hello, World from Hostinger.com', 'hstngr_widget_domain' );
+echo $args['after_widget'];
+}
+public function form( $instance ) {
+if ( isset( $instance[ 'title' ] ) )
+$title = $instance[ 'title' ];
+else
+$title = __( 'Default Title', 'hstngr_widget_domain' );
+?&gt;
+&lt;p&gt;
+&lt;label for="&lt;?php echo $this-&gt;get_field_id( 'title' ); ?&gt;"&gt;&lt;?php _e( 'Title:' ); ?&gt;&lt;/label&gt;
+&lt;input class="widefat" id="&lt;?php echo $this-&gt;get_field_id( 'title' ); ?&gt;" name="&lt;?php echo $this-&gt;get_field_name( 'title' ); ?&gt;" type="text" value="&lt;?php echo esc_attr( $title ); ?&gt;" /&gt;
+&lt;/p&gt;
+&lt;?php
+}
+public function update( $new_instance, $old_instance ) {
+$instance = array();
+$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+return $instance;
+}
+
+}</pre><p>Vous pouvez utiliser le Gestionnaire de fichiers, le client FTP ou l&#8217;éditeur WordPress pour ajouter ce code au fichier <strong>functions.php </strong>de votre thème . Ajoutez le code au fichier <strong>functions.php</strong> du thème actif et appuyez sur le bouton <strong>Mettre à</strong> <strong>jour le fichier</strong> pour enregistrer les modifications.</p><p><img
+class="wp-image-5798 size-full aligncenter" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/mettre-a-jour.png" alt="mettre a jour editeur wordpress" width="569" height="294" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/mettre-a-jour.png 569w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/mettre-a-jour-150x78.png 150w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/mettre-a-jour-300x155.png 300w" sizes="(max-width: 569px) 100vw, 569px" /></p><p>Maintenant, accédez simplement à votre zone d&#8217;administration WordPress et accédez à la section <strong>Apparence </strong> <strong>-&gt; </strong><strong>Widgets</strong> . Vous devriez voir un widget appelé <strong>Hostinger Sample Widget </strong>dans la liste <strong>Widgets disponibles</strong>.</p><p><img
+class="size-full wp-image-5797 aligncenter" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/ajout-widget.png" alt="ajout widget" width="821" height="258" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/ajout-widget.png 821w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/ajout-widget-150x47.png 150w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/ajout-widget-300x94.png 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/ajout-widget-768x241.png 768w" sizes="(max-width: 821px) 100vw, 821px" /></p><p>À partir d&#8217;ici, faites glisser le widget et déposez-le dans la box <strong>Colonne latérale </strong>du blog sur le côté droit de la page. Vous pourrez maintenant définir le titre du widget. Enregistrez-le, puis visitez votre site. Vous verrez avec un widget personnalisé avec le titre de votre choix et rempli des mots «Hello World!» à l&#8217;intérieur.</p><p>Félicitations, vous avez créé avec succès votre premier widget WordPress personnalisé. Vous pouvez maintenant voir à quoi votre widget ressemble.</p><p><a href="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/06/wordpress-widget-in-frontend.png" rel="lightbox[4953]" data-wpel-link="internal"><img
+class="aligncenter size-large wp-image-5129" src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/06/wordpress-widget-in-frontend-1024x404.png" alt="Widget WordPress personnalisé activé" width="1024" height="404" /></a></p><h2><span
+id="Conclusion"><span
+id="Conclusion">Conclusion</span></span></h2><p>Créer un widget WordPress peut sembler être une montagne insurmontable. En réalité, cependant, cela est facilement réalisable pour toute personne ayant un ensemble de compétences de base en HTML et PHP. Dans ce didacticiel, nous vous avons montré comment créer un widget WordPress avec le minimum d&#8217;étapes. À partir de là, vous pouvez créer des widgets plus fonctionnels. Si vous avez trouvé cela utile, assurez-vous de consulter d&#8217;autres <a href="https://www.hostinger.fr/tutoriels/wordpress" data-wpel-link="internal">guides WordPress</a> .</p><div
+class="essb_break_scroll"></div></div></div><div
+class="col-lg-12 col-md-12 col-sm-12"><div
+id="related" class="herald-related-wrapper"><div
+class="herald-mod-wrap"><div
+class="herald-mod-head "><div
+class="herald-mod-title"><h4 class="h6 herald-mod-h herald-color">Vous aimerez aussi</h4></div></div></div><div
+class="herald-related row row-eq-height"><article
+class="herald-lay-f post-6319 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-blog tag-blog-de-voyage tag-creer-un-blog-de-voyage tag-plugin-de-voyage tag-voyage tag-wordpress"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/comment-creer-un-blog-de-voyage" title="Comment créer un blog de voyage (en 6 étapes simples)" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/10/comment-créer-un-blog-de-voyage-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="comment-créer-un-blog-de-voyage" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/10/comment-créer-un-blog-de-voyage-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/10/comment-créer-un-blog-de-voyage-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/comment-creer-un-blog-de-voyage" data-wpel-link="internal">Comment créer un blog de voyage (en 6 étapes simples)</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">octobre 21st, 2018</span></div></div></div>
+</article>							<article
+class="herald-lay-f post-6310 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-crm-wordpress tag-plugin tag-plugin-crm tag-plugin-crm-wordpress tag-plugin-wordpress-crm tag-plugins-crm tag-plugins-crm-wordpress tag-wordpress tag-wordpress-crm"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/crm-wordpress" title="8 plugins CRM WordPress pour vous aider à gérer votre business" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/crm-wordpress-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="crm wordpress" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/crm-wordpress-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/crm-wordpress-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/crm-wordpress" data-wpel-link="internal">8 plugins CRM WordPress pour vous aider à gérer votre business</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">octobre 2nd, 2018</span></div></div></div>
+</article>							<article
+class="herald-lay-f post-6277 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-changer-mot-de-passe tag-mot-de-passe-administrateur tag-mot-de-passe-wordpress tag-reinitialiser-mot-de-passe-wordpress tag-wordpress"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/changer-votre-mot-de-passe-wordpress" title="Comment changer votre mot de passe WordPress d&#8217;administrateur (3 méthodes expliquées)" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/changer-mot-de-passe-wordpress-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="changer mot de passe wordpress" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/changer-mot-de-passe-wordpress-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/changer-mot-de-passe-wordpress-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/changer-votre-mot-de-passe-wordpress" data-wpel-link="internal">Comment changer votre mot de passe WordPress d&#8217;administrateur (3 méthodes expliquées)</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">septembre 24th, 2018</span></div></div></div>
+</article>							<article
+class="herald-lay-f post-6204 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-ameliorer-les-performances-wordpress tag-maintenance tag-maintenance-site-web tag-maintenance-wordpress tag-peformances tag-wordpress"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/maintenance-wordpress" title="Maintenance WordPress : 8 astuces pour améliorer les performances de WordPress" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/maintenance-wordpress-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="maintenance-wordpress" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/maintenance-wordpress-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/maintenance-wordpress-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/maintenance-wordpress" data-wpel-link="internal">Maintenance WordPress : 8 astuces pour améliorer les performances de WordPress</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">Last Updated on: septembre 22nd, 2018</span></div></div></div>
+</article>							<article
+class="herald-lay-f post-6176 post type-post status-publish format-standard category-wordpress tag-plugin-slider-wordpress tag-slide tag-slider tag-slider-wordpress tag-sliders tag-slides tag-wordpress"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/creer-un-slider-wordpress" title="Comment créer un Slider WordPress (et 5 meilleurs plugins pour le faire)" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr-300x100.png" class="attachment-herald-lay-b1 size-herald-lay-b1" alt="" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr-300x100.png 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr-150x50.png 150w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr-768x256.png 768w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr-414x138.png 414w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/05/fr.png 900w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/creer-un-slider-wordpress" data-wpel-link="internal">Comment créer un Slider WordPress (et 5 meilleurs plugins pour le faire)</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">septembre 7th, 2018</span></div></div></div>
+</article>							<article
+class="herald-lay-f post-6168 post type-post status-publish format-standard has-post-thumbnail category-vps category-wordpress tag-avantages-vps tag-hebergement-vps tag-hebergeur-vps tag-inconvenients-vps tag-vps"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/quest-ce-quun-vps" title="Qu&#8217;est ce qu&#8217;un hébergement VPS ? Tout ce que vous Devez Savoir sur les Serveurs Virtuels" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/quest-ce-que-lhébergement-vps-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="quest ce que lhébergement vps" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/quest-ce-que-lhébergement-vps-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2018/09/quest-ce-que-lhébergement-vps-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header">
+<span
+class="meta-category meta-small"><a href="https://www.hostinger.fr/tutoriels/vps/" class="herald-cat-4760" data-wpel-link="internal">VPS</a> <span>&bull;</span> <a href="https://www.hostinger.fr/tutoriels/wordpress/" class="herald-cat-4777" data-wpel-link="internal">WordPress</a></span><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/quest-ce-quun-vps" data-wpel-link="internal">Qu&#8217;est ce qu&#8217;un hébergement VPS ? Tout ce que vous Devez Savoir sur les Serveurs Virtuels</a></h2><div
+class="entry-meta meta-small"><div
+class="meta-item herald-date"><span
+class="updated">Last Updated on: septembre 13th, 2018</span></div></div></div>
+</article></div></div><div
+id="comments" class="herald-comments"><div
+class="herald-mod-wrap"><div
+class="herald-mod-head "><div
+class="herald-mod-title"><h4 class="h6 herald-mod-h herald-color">Ajouter un commentaire</h4></div></div></div><div
+class="herald-gray-area"><span
+class="herald-fake-button herald-comment-form-open">Cliquez ici pour poster un commentaire</span></div><div
+id="respond" class="comment-respond"><h3 id="reply-title" class="comment-reply-title"> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/tutoriels/creer-un-widget-wordpress/#respond" style="display:none;" data-wpel-link="internal">Annuler la réponse</a></small></h3><form
+action="https://www.hostinger.fr/tutoriels/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p
+class="comment-form-comment"><label
+for="comment">Commentaire</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><p
+class="comment-form-author"><label
+for="author">Nom<span
+class="required"> *</span></label> <input
+id="author" name="author" type="text" value="" size="30" aria-required='true' /></p><p
+class="comment-form-email"><label
+for="email">Mail<span
+class="required"> *</span></label> <input
+id="email" name="email" type="text" value="" size="30" aria-required='true' /></p><p
+class="wpgdprc-checkbox"><label><input
+type="checkbox" name="wpgdprc" id="wpgdprc" value="1" /> En utilisant ce formulaire, vous acceptez le stockage et le traitement de vos données par ce site Web. <abbr
+class="wpgdprc-required" title="You need to accept this checkbox.">*</abbr></label></p><p
+class="form-submit"><input
+name="submit" type="submit" id="submit" class="submit" value="Poster le commentaire" /> <input
+type='hidden' name='comment_post_ID' value='5764' id='comment_post_ID' />
+<input
+type='hidden' name='comment_parent' id='comment_parent' value='0' /></p><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8dacc49941" /></p><p
+style="display: none;"><input
+type="hidden" id="ak_js" name="ak_js" value="185"/></p></form></div><p
+class="akismet_comment_form_privacy_notice">Ce site utilise Akismet pour réduire les indésirables. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener external noreferrer" data-wpel-link="external">En savoir plus sur comment les données de vos commentaires sont utilisées</a>.</p></div></div></div></div><div
+class="herald-sidebar col-lg-3 col-md-3 herald-sidebar-right"><div
+id="herald_posts_widget-2" class="widget herald_posts_widget"><h4 class="widget-title h6"><span>Tutoriels similaires</span></h4><div
+class="row "><article
+class="herald-lay-f post-5815 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-erreur tag-erreur-http-wordpress tag-wordpress tag-wordpress-debug"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/wordpress-debug-type-fichier" title="WordPress Debug : &#8220;Désolé, ce type de fichier n&#8217;est pas pris en charge&#8221;" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/wordpress-debug-erreur-securite-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="wordpress debug erreur securite" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/wordpress-debug-erreur-securite-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/wordpress-debug-erreur-securite-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header"><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/wordpress-debug-type-fichier" data-wpel-link="internal">WordPress Debug : &#8220;Désolé, ce type de fichier n&#8217;est pas pris en charge&#8221;</a></h2></div></article>							<article
+class="herald-lay-f post-4810 post type-post status-publish format-standard has-post-thumbnail category-php category-site-web tag-composer tag-installer-composer"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/installer-utiliser-composer/" title="Comment installer et utiliser Composer" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/installer-utiliser-composer-300x100.png" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="installer-utiliser-composer" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/installer-utiliser-composer-300x100.png 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/04/installer-utiliser-composer-414x138.png 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header"><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/installer-utiliser-composer/" data-wpel-link="internal">Comment installer et utiliser Composer</a></h2></div></article>							<article
+class="herald-lay-f post-5851 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-meilleur-theme-wordpress tag-template-wordpress-gratuit tag-theme-gratuit-wordpress tag-theme-wordpress tag-theme-wordpress-gratuit tag-theme-wordpress-gratuit-2017 tag-wordpress-gratuit tag-wordpress-theme tag-wordpress-theme-gratuit"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/meilleur-theme-wordpress-gratuit/" title="30 des meilleurs thèmes WordPress gratuits à tester d&#8217;urgence" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/meilleur-theme-wordpress-gratuit-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="meilleur theme wordpress gratuit" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/meilleur-theme-wordpress-gratuit-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/09/meilleur-theme-wordpress-gratuit-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header"><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/meilleur-theme-wordpress-gratuit/" data-wpel-link="internal">30 des meilleurs thèmes WordPress gratuits à tester d&#8217;urgence</a></h2></div></article>							<article
+class="herald-lay-f post-5944 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-blog-wordpress tag-comment-creer-un-blog tag-creer-blog-wordpress tag-creer-son-blog tag-creer-un-blog tag-creer-un-blog-avec-wordpress tag-creer-un-blog-wordpress tag-creer-un-wordpress tag-faire-un-blog tag-faire-un-blog-wordpress tag-wordpress"><div
+class="herald-post-thumbnail herald-format-icon-middle">
+<a href="https://www.hostinger.fr/tutoriels/creer-blog-wordpress/" title="Comment créer un blog WordPress de manière efficace et rapide" data-wpel-link="internal">
+<img
+width="300" height="100" src="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/10/45285523-068d3880-b4ec-11e8-94f5-a76bafb69926-300x100.jpg" class="attachment-herald-lay-b1 size-herald-lay-b1 wp-post-image" alt="" srcset="https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/10/45285523-068d3880-b4ec-11e8-94f5-a76bafb69926-300x100.jpg 300w, https://www.hostinger.fr/tutoriels/wp-content/uploads/sites/9/2017/10/45285523-068d3880-b4ec-11e8-94f5-a76bafb69926-414x138.jpg 414w" sizes="(max-width: 300px) 100vw, 300px" />							</a></div><div
+class="entry-header"><h2 class="entry-title h5"><a href="https://www.hostinger.fr/tutoriels/creer-blog-wordpress/" data-wpel-link="internal">Comment créer un blog WordPress de manière efficace et rapide</a></h2></div></article></div></div></div></div>
+</article></div></div><div><div
+class="textwidget"><div
+class="herald-no-sidbottom-banner"><h2><span
+style="font-size: 48px;">Commencez à économiser dès maintenant !</span></h2><p><span
+style="font-weight: 300; font-size: 24px;">Hébergement et nom de domaine tout-en-un à partir de </span></p><table
+class="price_no"><tbody><tr><td
+class="currency">€</td><td
+class="bigno">2</td><td
+class="smallno"><div
+class="cents">45</div><div
+class="month">/mois</div></td></tr></tbody></table><div
+class="cta_btn centered"><a href="https://www.hostinger.fr" data-wpel-link="internal">Commencez dès MAINTENANT !</a></div></div></div></div>	<footer
+id="footer" class="herald-site-footer herald-slide"><div
+class="footer-widgets container"><div
+class="row"><div
+class="col-lg-3 col-md-3 col-sm-3"><div
+id="text-2" class="widget widget_text"><div
+class="textwidget"><h5 class="footer-menu">SERVICES</h5><ul><li><a href="https://www.hostinger.fr/hebergeur-web" data-wpel-link="internal">Meilleur Hébergeur Web<br
+/>
+</a></li><li><a href="https://www.hostinger.fr/vps-pas-cher" data-wpel-link="internal">Meilleur Hébergeur VPS</a></li><li><a href="https://www.hostinger.fr/serveur-cloud" data-wpel-link="internal">Hébergement Cloud</a></li><li><a href="https://www.hostinger.fr/hebergement-wordpress" data-wpel-link="internal">Hébergement WordPress pas cher</a></li><li><a href="https://www.hostinger.fr/nom-de-domaine-disponible" data-wpel-link="internal">Vérificateur de domaine</a></li><li><a href="https://www.hostinger.fr/creer-un-site-internet" data-wpel-link="internal">Logiciel de création de site</a></li><li><a href="https://www.hostinger.fr/transfert-nom-de-domaine" data-wpel-link="internal">Transfert de nom de domaine</a></li><li><a href="https://www.hostinger.fr/nom-de-domaine-gratuit" data-wpel-link="internal">Nom de domaine gratuit</a></li><li><a href="https://www.hostinger.fr/domaine-xyz-gratuit" data-wpel-link="internal">Domaine XYZ gratuit</a></li><li><a href="https://www.hostinger.fr/hebergement-gratuit" data-wpel-link="internal">Hébergement gratuit</a></li></ul></div></div></div><div
+class="col-lg-3 col-md-3 col-sm-3"><div
+id="text-3" class="widget widget_text"><div
+class="textwidget"><h5 class="footer-menu">INFORMATIONS</h5><ul><li><a href="https://www.hostinger.fr/affiliation" data-wpel-link="internal">Programme d&#8217;affiliation d&#8217;Hostinger</a></li><li><a href="https://www.hostinger.fr/methodes-paiement" data-wpel-link="internal">Méthodes de paiement</a></li><li><a href="https://www.hostinger.fr/prix-domaines" data-wpel-link="internal">Prix des domaines</a></li><li><a href="https://www.hostinger.fr/mur-renommee" data-wpel-link="internal">Mur de la Renommée</a></li></ul><h5 class="footer-menu">ENTREPRISE</h5><ul><li><a href="https://www.hostinger.fr/a-propos" data-wpel-link="internal">À propos d&#8217;Hostinger</a></li><li><a href="https://www.hostinger.fr/contact" data-wpel-link="internal">Contactez nous</a></li><li><a href="https://www.hostinger.fr/offres-emplois" data-wpel-link="internal">Travailler sur Internet</a></li></ul></div></div></div><div
+class="col-lg-3 col-md-3 col-sm-3"><div
+id="text-4" class="widget widget_text"><div
+class="textwidget"><h5 class="footer-menu">AIDE</h5><ul><li><a href="https://www.hostinger.fr/signaler-un-abus" data-wpel-link="internal">Signaler un abus</a></li><li><a href="https://www.hostinger.fr/base-connaissances" data-wpel-link="internal">Base de connaissances</a></li><li><a href="https://www.hostinger.fr/tutoriels/" data-wpel-link="internal">Tutoriels</a></li><li><a href="https://www.hostinger.com/blog/" data-wpel-link="internal">Blog (en anglais)</a></li></ul><h5 class="footer-menu">LÉGAL</h5><ul><li><a href="https://www.hostinger.fr/confidentialite" data-wpel-link="internal">Politique de confidentialité</a></li><li><a href="https://www.hostinger.fr/conditions-utilisation" data-wpel-link="internal">Conditions d&#8217;utilisation</a></li></ul></div></div></div><div
+class="col-lg-3 col-md-3 col-sm-3"></div></div></div><div
+class="footer-bottom"><div
+class="container"><div
+class="row"><div
+class="col-lg-12"><div
+class="hel-l herald-go-hor"><div
+class="herald-copyright">© 2004-2018 hostinger.fr - Services d'Hébergement Web Premium Abordable &amp; Noms de domaine Abordables.</div></div><div
+class="hel-r herald-go-hor"></div></div></div></div></div>
+</footer><noscript><iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-K2FZTKT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+>
+<noscript><img
+height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=301499733514427&ev=PageView&noscript=1"
+/></noscript><div
+id="om-worbmqkuvd5pldml6ag9-holder"></div><script>var worbmqkuvd5pldml6ag9,worbmqkuvd5pldml6ag9_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){worbmqkuvd5pldml6ag9_poll(function(){if(window['om_loaded']){if(!worbmqkuvd5pldml6ag9){worbmqkuvd5pldml6ag9=new OptinMonsterApp();return worbmqkuvd5pldml6ag9.init({"u":"13439.701109","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.optnmstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;worbmqkuvd5pldml6ag9=new OptinMonsterApp();worbmqkuvd5pldml6ag9.init({"u":"13439.701109","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script> <script type="text/javascript">var worbmqkuvd5pldml6ag9_shortcode = true;</script> <script type='text/javascript'>var tocplus = {"smooth_scroll":"1"};</script> <script type='text/javascript'>var ctcc_vars = {"expiry":"30","method":"1","version":"1"};</script> <script type='text/javascript'>var herald_js_settings = {"ajax_url":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","rtl_mode":"false","header_sticky":"1","header_sticky_offset":"600","header_sticky_up":"","single_sticky_bar":"","popup_img":"1","logo":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/uploads\/sites\/9\/2017\/04\/hostinger-logo-fr.png","logo_retina":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/uploads\/sites\/9\/2017\/04\/hostinger-logo-fr.png","logo_mini":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/uploads\/sites\/9\/2017\/04\/mini-logo-fr.png","logo_mini_retina":"https:\/\/www.hostinger.fr\/tutoriels\/wp-content\/uploads\/sites\/9\/2017\/04\/hostinger-logo-fr.png","smooth_scroll":""};</script> <script type='text/javascript'>var wpgdprcData = {"ajaxURL":"https:\/\/www.hostinger.fr\/tutoriels\/wp-admin\/admin-ajax.php","ajaxSecurity":"a277d52eac"};</script> <script type="text/javascript">EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"classic","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":false,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;</script><script type="text/javascript">(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script> <script type="text/javascript">jQuery(document).ready(function($){
+												if(!catapultReadCookie("catAccCookies")){ // If the cookie has not been set then show the bar
+							$("html").addClass("has-cookie-bar");
+							$("html").addClass("cookie-bar-bottom-bar");
+							$("html").addClass("cookie-bar-bar");
+													}
+																	});</script> <div
+id="catapult-cookie-bar" class=" use_x_close"><div
+class="ctcc-inner cookie-consent"><span
+class="ctcc-left-side">Nous utilisons des cookies pour personnaliser le contenu fourni par les partenaires analytique &amp; publicité pour vous offrir la meilleure expérience de service. <a class="ctcc-more-info-link" tabindex="0" target="_blank" href="https://www.hostinger.fr/cookie-policy" data-wpel-link="internal">Plus.</a></span><span
+class="ctcc-right-side"></span><div
+class="x_close"><span></span><span></span></div></div></div> <script type="text/javascript">var omapi_localized = { ajax: 'https://www.hostinger.fr/tutoriels/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '5f16c89b0d', slugs: {"worbmqkuvd5pldml6ag9":{"slug":"worbmqkuvd5pldml6ag9","mailpoet":false}} };</script> <script type="text/javascript" defer src="https://www.hostinger.fr/tutoriels/wp-content/cache/autoptimize/9/js/autoptimize_46011644fb1fdba90e636508e3e4fa25.js"></script></body></html>
+
+<!-- Cache Enabler by KeyCDN @ 26.10.2018 10:06:47 (html) -->

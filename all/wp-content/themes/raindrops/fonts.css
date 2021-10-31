@@ -1,0 +1,328 @@
+/**
+ * Raindrops Fonts Style Rules
+ * 
+ * Filetype: CSS
+ * @package Raindrops
+ */
+/** 
+ * INDEX
+ *
+ * Example
+     * The example of use Google WEB Fonts
+ * Font family
+ * Title
+     * All titles
+ * Font Size
+     * About Base Font Size
+ * Font weight
+ * Font Classes
+ * Misc
+ */
+/**
+ * Exampla
+   ========================================================================== */
+    /**
+     * The example of use Google WEB Fonts
+
+            @import url(//fonts.googleapis.com/css?family=Parisienne);
+
+            #site-title span{
+                    font-family: 'Parisienne', cursive;
+            }
+    */
+/**
+ * Font family
+   ========================================================================== */
+
+body{
+    font:arial,helvetica,clean,sans-serif;
+    line-height:1.231;
+}
+
+#access .menu,
+#access div.menu ul{
+    font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+.sans-serif,
+.entry-title.sans-serif,
+.rd-list .topsidebar .widgettitle, /* 1.480 */
+.rd-grid .topsidebar .widgettitle,
+.parent-entry .parent-entry-title,
+.rd-grid .entry-title,
+.eco-archive h3,
+.raindrops-pinup-entries h2,
+.datetable .h2,
+.topsidebar .widgettitle,
+.related-posts .entry-title,
+.related-posts .title.h3,
+.commentlist .pingback p,
+.commentlist .comment-body,
+.commentlist .reply,
+.commentlist .raindrops-comment-author-meta,
+.commentlist .comment-meta,
+.datetable .time,
+.datetable .month-name,
+.datetable .year-name,
+.datetable .day-name,
+.form-allowed-tags,
+.footer-widget h2,
+.rsidebar h2,
+.lsidebar h2,
+.widgettitle h2,
+h2.footer-content,
+h4, h5, h6, .h4, .h5, .h6{
+    font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+.serif,
+.serif .entry-title-text,
+.page-title,
+var, h1, h2, h3, .h1, .h2, .h3{
+    font-family:"Times New Roman", Times, serif;
+}
+.form-allowed-tags code,
+code, kbd, samp,
+tt {
+    font-family:"Osaka", "Consolas", "Courier New", "Courier", "MS Gothic", monospace;
+    line-height:100%;
+}
+
+/**
+ * Title
+   ========================================================================== */
+    /*
+     * All titles
+     *
+        .error404 .entry-title,
+        .paged .list-of-post-entry .entry-title,
+        .page.list-of-post-entry article .entry-title,
+        .search-results .pagetitle,
+        #comments-title,
+        .single .entry-title,
+        .page .entry-title,
+        .footer-widget .widgettitle,
+        .topsidebar .widgettitle,
+        .archive .archives .entry-title-text,
+        .archive .archives .title,
+        .author main > h2,
+        .attachment .section-title,
+        .attachment .parent-entry-title,
+        .attachment .image-title,
+        .related-posts .entry-title{}
+    */
+/**
+ * Font Size
+   ========================================================================== */
+    /**
+     * About Base Font Size
+     * base font size is set dinamicaly
+     * @see functions.php raindrops_font_size_class()
+     */
+    
+    /**
+     * .h*:not(h1) is Avoid em size issue 
+     */
+
+.h1:not(h1), h1 {
+    font-size:197%;
+}
+.sans-serif,
+.entry-content h2.sans-serif,
+.archive .archives .title-wrapper .label,
+.archive .archives .title-wrapper .title,
+.h2:not(h2), h2 {
+    font-size:153.9%;
+}
+
+.rd-grid .search-results .entry-title,
+.rd-grid .archives .entry-title,
+.parent-entry-title,
+.image-caption .section-title{
+    font-size:138.5%;
+}
+.topsidebar .widgettitle,
+.entry-content h3.sans-serif,
+.page .raindrops-tag-posts .enty-title,
+.page .raindrops-category-posts .entry-title,
+.page .raindrops-recent-posts .entry-title,
+.yui-b > .yui-gf #wp-calendar caption,
+.yui-b > .yui-gd #wp-calendar caption,
+.yui-b > .yui-g #wp-calendar caption,
+.yui-b > .yui-gf #wp-calendar tbody td,
+.yui-b > .yui-gd #wp-calendar tbody td,
+.yui-b > .yui-g #wp-calendar tbody td,
+.sticky-widget #wp-calendar caption,
+.sticky-widget #wp-calendar tbody td,
+.rsidebar .widgettitle,
+.lsidebar .widgettitle,
+.h3:not(h3), h3 {
+   font-size:123.1%;
+}
+div[role="banner"] #site-title.f14,
+big {
+    font-size:108%;
+}
+.wp-caption p.wp-caption-text,
+div.menu,
+.date .entry-title,
+.h4:not(h4), h4{
+    font-size:100%;
+}
+.gallery .gallery-caption{
+    font-size:93%;
+}
+sub, sup, small,
+.h5:not(h5), h5 {
+    font-size:85%;
+}
+h2 a.rsswidget,
+.h6:not(h6), h6{
+    font-size:77%;
+}
+/**
+ * Font weight
+   ========================================================================== */
+.raindrops-comment-link em,
+.site-title-link,
+h4, h5, h6, .h4, .h5, .h6{
+    font-weight:400;
+}
+strong,
+th,
+.paginate a:hover,
+em,
+dt,
+caption,
+.post-format-status-publish-date,
+.category-blog-publish-date,
+.portfolio-nav-current,
+.post-format-text,
+.rd-current-post > a,
+.current_page_item > a,
+.current-menu-item > a,
+.entry-title,
+.title,
+h1,h2,h3,h4,h5,h6,
+.h1.h2,h3,.h4,h5,h6{
+    font-weight:700;
+}
+/**
+ * Calendar
+   ========================================================================== */
+.yui-t1 #wp-calendar caption,
+.yui-t1 #wp-calendar td{
+    font-size:0.61538461538em;
+}
+.yui-t4 #wp-calendar td,
+.yui-t4 #wp-calendar caption,
+.yui-t2 #wp-calendar td{
+    font-size:0.84615384615em;
+}
+.yui-t5 #wp-calendar caption,
+.yui-t5 #wp-calendar td{
+    font-size:1.07692307692em;
+}
+/**
+ * Font Classes
+   ========================================================================== */
+/**
+ * font weight
+ */
+.b1 .site-title-link,
+.entry-title.b1,
+.thin,
+.b1{
+    font-weight:100;
+}
+.b2 .site-title-link,
+.entry-title.b2,
+.b2{
+    font-weight:200;
+}
+.b3 .site-title-link,
+.entry-title.b3,
+.b3{
+    font-weight:300;
+}
+.b4 .site-title-link,
+.entry-title.b4,
+.b4{
+    font-weight:400;
+}
+.b5 .site-title-link,
+.entry-title.b5,
+.b5{
+    font-weight:500;
+}
+.b6 .site-title-link,
+.entry-title.b6,
+.b6{
+    font-weight:600;
+}
+.b7 .site-title-link,
+.entry-title.b7,
+.bold,
+.b7{
+    font-weight:700;
+}
+.b8 .site-title-link,
+.entry-title.b8,
+.b8{
+    font-weight:800;
+}
+.b9 .site-title-link,
+.entry-title.b9,
+.b9{
+    font-weight:900;
+}
+.small-caps{
+    font-variant:small-caps;
+    vertical-align:middle;
+}
+.uppercase{
+    text-transform:uppercase;
+}
+.lowercase{
+    text-transform:lowercase;   
+}
+.capitalize{
+    text-transform:capitalize;
+}
+/**
+ * body basefont sizes
+   ========================================================================== */
+.rd-basefont-13{
+    font-size:13px;
+}
+.rd-basefont-14{
+    font-size:14px;
+}
+.rd-basefont-15{
+    font-size:15px;
+}
+.rd-basefont-16{
+    font-size:16px;
+}
+.rd-basefont-17{
+    font-size:17px;
+}
+.rd-basefont-18{
+    font-size:18px;
+}
+.rd-basefont-19{
+    font-size:19px;
+}
+.rd-basefont-20{
+    font-size:20px;
+}
+/**
+ * Misc
+   ========================================================================== */
+var, em, .entry-content cite {
+    font-style:italic;
+}
+.ja em{
+    font-style:normal;
+}
+figcaption{
+    font-size:0.8125rem;
+}

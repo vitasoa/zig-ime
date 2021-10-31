@@ -1,0 +1,265 @@
+@extends('layouts.app') 
+
+@section('pageTitle', 'Collections')
+
+@section('content')
+<section class="" style="margin-top:-20px">
+	
+	<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+		<div class="row-fluid ">
+			<div class="span12 widget-span widget-type-widget_container " data-w="12" data-widget-type="widget_container" data-x="0" style="">
+				<div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" data-hs-cos-general-type="widget" data-hs-cos-type="module" id="hs_cos_wrapper_widget_1616529550031" style="">
+					<section class="hsg-page-header" data-background="light" data-image-frame="background">
+						<div class="hsg-page-header__bg-image hsg-page-header__bg--desktop" style="background-image: url('{{ asset('assets/img/contact/collection.jpg') }}">
+							&nbsp;
+						</div>
+						
+						<div class="hsg-page-header__container">
+							<div class="hsg-page-header__content">
+								<div class="hsg-page-header__text">
+									<h1 class="hsg-page-header__heading">
+										<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container" id="hs_cos_wrapper_module_153737270786195" style="">
+											Nos Collections - I.M.E
+										</span>
+									</h1>
+									<p>
+										<span class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container" id="hs_cos_wrapper_module_153737270786195" style="">
+											Si vous possédez une bibliothèque et un jardin, vous avez tout ce qu'il vous faut ...
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!--end widget-span -->
+		</div>
+		<!--end row-->
+	</div>
+	
+	<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+			
+			<div class="search-info" style="margin-bottom: 20px; text-align: justify">
+				<!--p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia accusantium quibusdam consequatur ullam possimus corporis architecto, ratione alias necessitatibus voluptas, impedit iusto voluptates incidunt quia molestiae, provident beatae vitae et?</p-->
+			</div>
+			
+			<div class="form-style-5">
+				<div class="row">
+					<div class="col-md-8">
+						<fieldset>
+							<legend style="margin-bottom: 50px;"><span class="number">1</span> {{ __('lang.Search query') }} </legend>
+							
+							<div style="display: inline-block;">
+								<select id="field" name="field">
+									<option value="any">{{ __('lang.Any field') }}</option>
+									<option value="title">{{ __('lang.Title') }}</option>
+									<option value="author">{{ __('lang.Author') }}</option>
+									<option value="desc">{{ __('lang.Description') }}</option>
+									<option value="keys">{{ __('lang.Mots clés') }}</option>
+								</select>  
+							</div>
+							
+							<div style="display: inline-block; margin-left:20px">
+								<select id="job" name="Gender">
+									<option value="contains">{{ __('lang.Contains') }}</option>
+									<option value="exact">{{ __('lang.Is (Exact)') }}</option>
+									<option value="startwith">{{ __('lang.Start with') }}</option>
+								</select>  
+							</div>
+							
+							<div style="display: inline-block; margin-left:20px">
+								<input class="inputWidth1" type="text" name="Name" placeholder="Collection *" style="width: 300px !important;">
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							
+							<div style="display: inline-block;">
+								<select id="option-add" name="option-add">
+									<option value="and">{{ __('lang.AND') }}</option>
+									<option value="or">{{ __('lang.OR') }}</option>
+									<!--option value="not">{{ __('lang.NOT') }}</option-->
+								</select>  
+							</div>
+							
+							<div style="display: inline-block; margin-left:20px">
+								<select id="field" name="field">
+									<option value="any">{{ __('lang.Any field') }}</option>
+									<option value="title">{{ __('lang.Title') }}</option>
+									<option value="author">{{ __('lang.Author') }}</option>
+									<option value="desc">{{ __('lang.Description') }}</option>
+									<option value="keys">{{ __('lang.Mots clés') }}</option>
+								</select>  
+							</div>
+							
+							<div style="display: inline-block; margin-left:20px">
+								<select id="job" name="Gender">
+									<option value="contains">{{ __('lang.Contains') }}</option>
+									<option value="exact">{{ __('lang.Is (Exact)') }}</option>
+									<option value="startwith">{{ __('lang.Start with') }}</option>
+								</select>  
+							</div>
+							
+							<div style="display: inline-block; margin:0 auto">
+								<input class="inputWidth2" type="text" name="Name" placeholder="Collection *" style="width: 300px !important;">
+							</div>
+						</fieldset>
+					</div>
+				
+					<div class="col-md-4" style="border-left: 1px solid black; padding: 0px 20px;">
+						<fieldset>
+							<legend><span class="number">2</span> {{ __('lang.Search code') }} </legend>
+
+							<div>
+								<select id="theme" name="theme" style="width: 70%;">
+									<option value="">Thème</option>
+									@foreach($themes as $theme)
+										<option value="{{ $theme->name }}">{{ $theme->name }}</option>
+									@endforeach
+								</select>  
+							</div>
+							
+							<div>
+								<select id="lang" name="lang" style="width: 70%;">
+									<option value="">Langue de publication</option>
+									<option value="fr">Français</option>
+									<option value="en">Anglais</option>
+									<option value="en">Autres</option>
+								</select>  
+							</div>
+							
+							<div>
+								<select id="year" name="year" style="width: 70%;">
+									<option value="">Année de publication</option>
+									@foreach(range(date('Y')-20, date('Y')) as $y)
+										<option value="{{ $y }}">{{ $y }}</option>
+									@endforeach
+								</select>  
+							</div>
+							
+							<div>
+								<select id="type" name="type" style="width: 70%;">
+									<option value="">Type de document</option>
+									<option value="">Article</option>
+									<option value="fr">Mémoire</option>
+									<option value="en">Thèse</option>
+									<option value="en">Revue</option>
+								</select>  
+							</div>
+
+						</fieldset>
+					</div>
+				</div>
+
+				<div style="text-align: center;">
+					<button id="search-agenda-btn" class="btn btn-primary btn-sm" type="button">Rechercher</button>
+					<button style="margin-left:15px" class="btn btn-info btn-sm" type="button">Effacer</button>
+				</div>
+			</div>
+				
+			<div class="mt-2 mb-2" style="border-top: 1px solid black; padding: 20px 0px;">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="d-flex flex-row justify-content-between align-items-center filters">
+							<h6 style="font-weight:600">{{ $nbr_collections }} Ebook(s)</h6>
+							<!--div class="right-sort">
+								<div class="sort-by"><span class="mr-1"></span>
+								<select id="ime-filter">
+									<option value="rating">Most popular</option>
+									<option value="name_asc">Ascending</option>
+									<option value="name_desc">Descending</option>
+									<option value="date_asc">Date ASC</option>
+									<option value="date_desc">Date DESC</option>
+								</select>
+								<button class="btn btn-outline-dark btn-sm ml-3 filter" type="button">Filtrer</button>
+								</div>
+							</div-->
+						</div>
+					</div>
+				</div>
+				<div class="row mt-1">
+
+					@foreach($collections as $collection)
+					<div class="collection-item">
+						<div style="min-height: 320px" class="p-card p-2 collection-rounded px-3">
+							<div class="d-flex align-items-center credits">
+								<!--img src="https://i.imgur.com/hlz6G90.png" width="16px"-->
+								<i class="fas fa-book"></i>
+								<span class="text-black-50 ml-2">1 download(s)</span>
+							</div>
+							<a href="{{route('collection.detail', ['id' => app('encrypter')->encrypt($collection->id)])}}">
+							@if ($collection->image)
+								<img class="collection-img" src="{{$collection->image}}"></img>
+							@else
+								<div class="collection-div">No Image</div>
+							@endif
+							</a>
+							<a href="{{route('collection.detail', ['id' => app('encrypter')->encrypt($collection->id)])}}">
+							<h5 class="mt-2">{{ $collection->name }}</h5>
+							</a>
+							
+							@php
+								$authors = App\Models\Book::getAuthors($collection->id);
+								$themes = App\Models\Book::getThemes($collection->id);
+								$countAuthors = count($authors);
+							@endphp
+							
+							<span class="badge badge-danger py-1 mb-2">
+							@php
+								$implodeThemes = array();
+								foreach($themes as $theme){
+									$collectionTheme = App\Models\Theme::getThemeById($theme->theme_id);
+									array_push($implodeThemes, $collectionTheme->name);
+								}
+								
+								$allowThemes = implode(' & ', $implodeThemes);
+								if (!$allowThemes) {
+									$allowThemes = 'Physiques';
+								}
+							@endphp
+							{{ $allowThemes }}
+							</span>
+							<!--span class="d-block mb-1 collection-theme">{{ Str::limit($collection->commentary, 40, ' ...') }}</span-->
+							<div class="d-flex justify-content-between stats" style="margin-top: 10px">
+								<div><i class="fas fa-calendar"></i><span class="ml-2">{{ Carbon\Carbon::parse($collection->created_at)->diffForHumans()}}</span></div>
+								<div class="d-flex flex-row align-items-center">
+									<div class="profiles">
+										@php
+											foreach($authors as $author){
+												$collectionAuthor = App\Models\Author::getAuthorsById($author->author_id);
+										@endphp
+												<img class="rounded-circle" style="cursor: pointer;" src="{{ $collectionAuthor->profile_photo }}" width="30" title="{{ $collectionAuthor->lastname }}">
+										@php
+											}
+										@endphp
+										<!--img class="rounded-circle" src=" https://i.imgur.com/GHCtqgp.jpg" width="30">
+										<img class="rounded-circle" src="https://i.imgur.com/UL0GS75.jpg" width="30"-->
+									</div>
+									<!--span class="ml-3">{{ $countAuthors }} Auteurs</span-->
+								</div>
+							</div>
+						</div>
+					</div>
+					@endforeach
+				</div>
+					
+				<!--div class="d-flex justify-content-end text-right mt-2">
+					<nav>
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						</ul>
+					</nav>
+				</div-->
+			</div>
+		
+	</div>
+	
+</section>
+@endsection

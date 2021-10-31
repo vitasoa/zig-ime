@@ -1,0 +1,230 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Models\Book;
+use App\Models\Theme;
+use App\Models\Author;
+use DB;
+use Carbon\Carbon;
+
+class BookController extends Controller
+{
+    public function collection() {
+		$themes = DB::table('themes')->get();		
+		return view('collection', compact('themes'));
+	}
+	
+	public function getCollection(){
+		$collections = DB::table('books')->orderBy('published_date', 'desc')->get();
+		$arrayCollection = array();
+		foreach($collections as $k => $v) {
+			$arrValue = (array)$v;
+			
+			$authors = Book::getAuthors($arrValue['id']);
+			$themes = Book::getThemes($arrValue['id']);
+			$implodeThemes = array();
+			foreach($themes as $theme){
+				$collectionTheme = Theme::getThemeById($theme->theme_id);
+				array_push($implodeThemes, $collectionTheme->name);
+			}
+			
+			$allowThemes = implode(' & ', $implodeThemes);
+			if (!$allowThemes) {
+				$allowThemes = 'Physiques';
+			}
+			
+			$collectionAuthorBook = array();
+			foreach($authors as $author){
+				$collectionAuthor = Author::getAuthorsById($author->author_id);
+				array_push($collectionAuthorBook, $collectionAuthor);
+			}
+			
+			$countAuthors = count($authors);
+			
+			$arrValue['id'] = app('encrypter')->encrypt($arrValue['id']);
+			$arrValue['authors'] = $collectionAuthorBook;
+			$arrValue['themes'] = $allowThemes;
+			$arrValue['countAuthors'] = $countAuthors;
+			$created_at = Carbon::parse($arrValue['created_at'])->diffForHumans();
+			$arrValue['diffforhumans'] = ucfirst($created_at);
+			array_push($arrayCollection, $arrValue);
+		}
+		// dd($arrayCollection);
+		return $arrayCollection;
+	}
+	
+	public function getCollections(Request $request) {
+		$field1 = $request->get('field1');
+		$field2 = $request->get('field2');
+		$query1 = $request->get('query1');
+		$query2 = $request->get('query2');
+		$collection1 = $request->get('collection1');
+		$collection2 = $request->get('collection2');
+		$option_add = $request->get('option_add');
+		$theme = $request->get('theme');
+		$lang = $request->get('lang');
+		$year = $request->get('year');
+		$type = $request->get('type');
+
+		if( $collection1 == null && $collection2 == null && $theme == null && $lang == null && $year == null && $type == null){
+			$collection = $this->getCollection();
+			return $collection;
+		}else{
+			$collections = DB::table('books');
+			
+			/** If Collection2 but not Collection1 **/
+			if ($collection1 == null && $collection2 != null){
+				$collection1 = $collection2;
+			}
+			
+			if ($collection2 == null && $collection1 != null) {
+				if($field1 == 'any'){ 
+					if ($query1 == 'contains'){
+						$collections->select('books.id')   
+									->leftjoin('book_authors','book_authors.book_id','=','books.id')
+									->leftjoin('authors','book_authors.author_id','=','authors.id')
+									->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+									->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+									->where('books.name','LIKE','%' . $collection1 . '%')
+									->orwhere('books.commentary','LIKE','%' . $collection1 . '%')
+									->orwhere('books.topic','LIKE','%' . $collection1 . '%')
+									->orwhere('authors.lastname','LIKE','%' . $collection1 . '%')
+									->orwhere('keywords.name','LIKE','%' . $collection1 . '%');
+					}					
+					if ($query1 == 'exact'){
+						$collections->select('books.id')   
+									->leftjoin('book_authors','book_authors.book_id','=','books.id')
+									->leftjoin('authors','book_authors.author_id','=','authors.id')
+									->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+									->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+									->where('books.name','=', $collection1)
+									->orwhere('books.commentary','=', $collection1)
+									->orwhere('books.topic','LIKE','=', $collection1)
+									->orwhere('authors.lastname','=', $collection1)
+									->orwhere('keywords.name','=', $collection1);
+					}					
+					if ($query1 == 'startwith'){
+						$collections->select('books.id')   
+									->leftjoin('book_authors','book_authors.book_id','=','books.id')
+									->leftjoin('authors','book_authors.author_id','=','authors.id')
+									->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+									->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+									->where('books.name','LIKE','%' . $collection1 . '%')
+									->orwhere('books.commentary','LIKE','%' . $collection1)
+									->orwhere('books.topic','LIKE','%' . $collection1)
+									->orwhere('authors.lastname','LIKE','%' . $collection1)
+									->orwhere('keywords.name','LIKE','%' . $collection1);
+					}
+				}else{
+					/** Book **/
+					if($field1 == 'title'){
+						if ($query1 == 'contains'){
+							$collections->select('books.id')
+										->where('books.name','LIKE','%' . $collection1 . '%');
+						}						
+						if ($query1 == 'exact'){
+							$collections->select('books.id')
+										->where('books.name','=',$collection1);
+						}						
+						if ($query1 == 'startwith'){
+							$collections->select('books.id')
+										->where('books.name','LIKE','%' . $collection1);
+						}
+					}
+					
+					if($field1 == 'desc'){
+						if ($query1 == 'contains'){
+							$collections->select('books.id')
+										->where('books.commentary','LIKE','%' . $collection1 . '%')
+										->orwhere('books.topic','LIKE','%' . $collection1 . '%');
+						}						
+						if ($query1 == 'exact'){
+							$collections->select('books.id')
+										->where('books.commentary','=', $collection1)
+										->orwhere('books.topic','=', $collection1);
+						}						
+						if ($query1 == 'startwith'){
+							$collections->select('books.id')
+										->where('books.commentary','LIKE','%' . $collection1)
+										->orwhere('books.topic','LIKE','%' . $collection1);
+						}
+					}
+					/** Authors **/
+					if($field1 == 'author'){
+						if ($query1 == 'contains'){
+							$collections->select('books.id')   
+										->leftjoin('book_authors','book_authors.book_id','=','books.id')
+										->leftjoin('authors','book_authors.author_id','=','authors.id')
+										->where('authors.lastname','LIKE','%' . $collection1 . '%');
+						}						
+						if ($query1 == 'exact'){
+							$collections->select('books.id')   
+										->leftjoin('book_authors','book_authors.book_id','=','books.id')
+										->leftjoin('authors','book_authors.author_id','=','authors.id')
+										->where('authors.lastname','=', $collection1);
+						}						
+						if ($query1 == 'startwith'){
+							$collections->select('books.id')   
+										->leftjoin('book_authors','book_authors.book_id','=','books.id')
+										->leftjoin('authors','book_authors.author_id','=','authors.id')
+										->where('authors.lastname','LIKE','%' . $collection1);
+						}
+					}
+					/** Keywords **/
+					if($field1 == 'keys'){
+						if ($query1 == 'contains'){
+							$collections->select('books.id') 
+										->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+										->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+										->where('keywords.name','LIKE','%' . $collection1 . '%');
+						}						
+						if ($query1 == 'exact'){
+							$collections->select('books.id')  
+										->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+										->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+										->where('keywords.name','=', $collection1);
+						}						
+						if ($query1 == 'startwith'){
+							$collections->select('books.id')   
+										->leftjoin('book_keywords','book_keywords.book_id','=','books.id')
+										->leftjoin('keywords','book_keywords.keyword_id','=','keywords.id')
+										->where('keywords.name','LIKE','%' . $collection1);
+						}						
+					}					
+				}
+				
+				$collections = $collections->groupBy('books.id')->get();
+				return $collections;
+			} else {
+				/** Collection1 and Collection2 **/
+				/** Any - Any => (ET - OU) **/
+				// $collection = $this->getCollection();
+				// return $collection;
+				
+				
+				
+				
+			}
+		}
+	}
+	
+	public function detail(Request $request) {
+		$id = app('encrypter')->decrypt($request->id);
+
+		$collection = Book::where('id', '=', $id)->get()->load('themes')->load('keywords')->load('authors');
+		// $courses = Book::all()->load('themes');
+        $first = $collection->first();
+        if (!empty($first))
+        {
+            return view('detail', compact('first'));
+        } else
+        {
+            return back();
+        }
+		
+		
+	}
+}

@@ -1,0 +1,171 @@
+<?php
+/**
+ * Displays the header content
+ *
+ * @package Theme Freesia
+ * @subpackage Freesia Empire
+ * @since Freesia Empire 1.0
+ */
+?>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<?php
+$freesiaempire_settings = freesiaempire_get_theme_options(); ?>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<?php wp_head(); ?>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Ce site utilise des cookies. Lorsque vous naviguez sur notre site, vous acceptez le d&eacute;p&ocirc;t des cookies permettant de vous offrir une exp&eacute;rience personnalis&eacute;e.",
+    "dismiss": "J'accepte",
+    "link": "En savoir plus",
+    "href": "/conditions-generales-dutilisation"
+  }
+})});
+</script>
+
+</head>
+<body <?php body_class(); ?>>
+<div id="page" class="hfeed site">
+
+<div class="normes-ul-entete-ul">
+	<?php //echo do_shortcode( '[hsas-shortcode group="header" speed="10" direction="left" gap="50"]' ); ?>
+</div>
+
+<!-- Masthead ============================================= -->
+<header id="masthead" class="site-header">
+	<?php
+				if($header_image = $freesiaempire_settings['freesiaempire_display_header_image'] == 'top'){
+					do_action('freesiaempire_header_image');
+				}
+				echo '<div class="top-header">
+						<div class="container clearfix">';
+						do_action('freesiaempire_site_branding');
+
+						echo '<div class="menu-toggle">      
+								<div class="line-one"></div>
+								<div class="line-two"></div>
+								<div class="line-three"></div>
+								<div class="line-four"></div>
+							</div>';
+
+						echo '<div class="header-info clearfix">';
+							if(has_nav_menu('social-link') && $freesiaempire_settings['freesiaempire_top_social_icons'] == 0):
+								echo '<div class="header-social-block">';
+									do_action('social_links');
+								echo '</div>'.'<!-- end .header-social-block -->';
+							endif;
+							if( is_active_sidebar( 'freesiaempire_header_info' )) {
+								dynamic_sidebar( 'freesiaempire_header_info' );
+							}
+						echo ' </div> <!-- end .header-info -->';
+						$search_form = $freesiaempire_settings['freesiaempire_search_custom_header'];
+						if (1 != $search_form) { ?>
+							<div id="search-toggle" class="header-search"></div>
+							<div id="search-box" class="clearfix">
+								<?php get_search_form();?>
+							</div>  <!-- end #search-box -->
+						<?php } 
+
+					echo '</div> <!-- end .container -->
+				</div> <!-- end .top-header -->';
+			if($header_image = $freesiaempire_settings['freesiaempire_display_header_image'] == 'below'){
+				do_action('freesiaempire_header_image');
+			} 
+			?>
+	<!-- Main Header============================================= -->
+	<div id="sticky_header">
+		<div class="container clearfix">
+			<!-- Main Nav ============================================= -->
+			<?php
+				if (has_nav_menu('primary')) { ?>
+			<?php $args = array(
+				'theme_location' => 'primary',
+				'container'      => '',
+				'items_wrap'     => '<ul id="primary-menu" class="menu nav-menu">%3$s</ul>',
+				); ?>
+			<nav id="site-navigation" class="main-navigation clearfix">
+				<button class="menu-toggle-2" aria-controls="primary-menu" aria-expanded="false"></button>
+					  	<!-- end .menu-toggle -->
+				<?php wp_nav_menu($args);//extract the content from apperance-> nav menu ?>
+			</nav> <!-- end #site-navigation -->
+			<?php } else {// extract the content from page menu only ?>
+			<nav id="site-navigation" class="main-navigation clearfix">
+				<button class="menu-toggle-2" aria-controls="primary-menu" aria-expanded="false"></button>
+					  	<!-- end .menu-toggle -->
+				<?php	wp_page_menu(array('menu_class' => 'menu', 'items_wrap'     => '<ul id="primary-menu" class="menu nav-menu">%3$s</ul>')); ?>
+			</nav> <!-- end #site-navigation -->
+			<?php } ?>
+		</div> <!-- end .container -->
+	</div> <!-- end #sticky_header -->
+	<?php
+		$enable_slider = $freesiaempire_settings['freesiaempire_enable_slider'];
+		freesiaempire_slider_value();
+		if ($enable_slider=='frontpage'|| $enable_slider=='enitresite'){
+			if(is_front_page() && ($enable_slider=='frontpage') ) {
+				if($freesiaempire_settings['freesiaempire_slider_type'] == 'default_slider') {
+						freesiaempire_page_sliders();
+				}else{
+					if(class_exists('Freesia_Empire_Plus_Features')):
+						freesiaempire_image_sliders();
+					endif;
+				}
+			}
+			if($enable_slider=='enitresite'){
+				if($freesiaempire_settings['freesiaempire_slider_type'] == 'default_slider') {
+						freesiaempire_page_sliders();
+				}else{
+					if(class_exists('Freesia_Empire_Plus_Features')):
+						freesiaempire_image_sliders();
+					endif;
+				}
+			}
+		}
+		if(!is_page_template('page-templates/freesiaempire-corporate.php') && !is_page_template('alter-front-page-template.php')) {
+			if (('' != freesiaempire_header_title()) || function_exists('bcn_display_list')) {
+				if(is_home()){
+					if($freesiaempire_settings['freesiaempire_blog_header_display'] == 'show'){ ?>
+						<div class="page-header clearfix">
+							<div class="container">
+									<h2 class="page-title"><?php echo freesiaempire_header_title();?></h2> <!-- .page-title -->
+									<?php freesiaempire_breadcrumb(); ?>
+							</div> <!-- .container -->
+						</div> <!-- .page-header -->
+					<?php }
+				} else { ?>
+						<div class="page-header clearfix">
+							<div class="container">
+									<h1 class="page-title"><?php echo freesiaempire_header_title();?></h1> <!-- .page-title -->
+									<?php freesiaempire_breadcrumb(); ?>
+							</div> <!-- .container -->
+						</div> <!-- .page-header -->
+				<?php }
+			}
+		} ?>
+</header> <!-- end #masthead -->
+<!-- Main Page Start ============================================= -->
+<div id="content">
+<?php if (!is_page_template('page-templates/freesiaempire-corporate.php') ){ 
+  if(is_page_template('three-column-blog-template.php') || is_page_template('our-team-template.php') || is_page_template('about-us-template.php') || is_page_template('portfolio-template.php') ){
+
+	}else{?>
+<div class="container clearfix">
+<?php }
+	}

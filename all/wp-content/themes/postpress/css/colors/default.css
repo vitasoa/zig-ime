@@ -1,0 +1,33 @@
+/*
+
+//http://www.cssfontstack.com/oldsites/hexcolortool/
+
+//default (gold) : #f4b942;
+Default Airy (blue): #0275d8;
+bubblegum (pink): #e9a3c7;
+Pinky: ea579e;
+Plum : 8e6f81
+Ruby (dark red): 9a0201
+pumpkin: ea8147;
+lime (bright green): aed934
+Apple (darke green): 9aac3c
+Sky (light Bleu): 93d5ed
+Navy (dark blue): 454e5f;
+Gray: 8a8987
+Cocoa (brown): 6c5140
+Black
+
+*/
+
+.card-primary .card-title a:hover, #list-posts article.sticky .card-title a:hover,
+.card-primary .text-muted, #list-posts article.sticky .text-muted{
+  //color: #EFEFEF !important; //50% dark
+}
+
+.card-footer a, .card-header a{
+  color: #005CBF;
+}
+
+.card-footer a:hover, .card-header a:hover{
+  color: #0275d8;
+}

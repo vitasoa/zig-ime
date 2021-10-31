@@ -1,0 +1,12 @@
+= Version 1.0 =
+* Initial Release
+
+= Version 1.0.2 =
+* Theme Description is Updated.
+
+= Version 1.0.4 =
+* Fixed minor coding issues.
+
+= Version 1.0.5 =
+* Fixed minor coding issues.
+* Screenshot is updated.
